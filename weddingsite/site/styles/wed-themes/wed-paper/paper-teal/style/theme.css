@@ -1,0 +1,42 @@
+/*
+/***** PAPER TEAL THEME *****/
+
+body {color: #5d4434;background: url(../images/bg-slice-squares.gif) repeat;}
+
+h1, h2, h3, h4 {color: #32a0ad;font-family: Arial, Helvetica, sans-serif;}
+a {color: #32a0ad;}
+a:hover {color: #000;}
+span.colour {color: #053b6e;}
+p {font-family: Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4 {font-weight: bold;}
+
+/* Structure
+-------------------------------------------------------------------------------------- */
+#container {background-image: url(../images/bg-slice-content.gif);}
+#content {background-image: url(../images/bg-content-footer.png);}
+#content .inner {background-image: url(../images/bg-content-slice.png);}
+/* Header
+-------------------------------------------------------------------------------------- */
+#header h1 {color: #32a0ad;text-shadow:none;width: 500px;margin: 45px auto 0; font-size: 320%;}
+#header {background-image: url(../images/bg-slice.gif);}
+#header .header-content {background: url(../images/bg-header.png);}
+#header h3 {color: #5c3f22;background-image: url(../images/bg-header-date.png); font-weight: normal;
+text-shadow: 1px 1px 0 #f7eedf;}
+
+/* Navigation
+-------------------------------------------------------------------------------------- */
+ul#nav li a {color: #32a0ad;background: url(../images/bullet-grey.png) no-repeat 0px 4px;font-family: Arial, Helvetica, sans-serif;}
+ul#nav a:hover {color: #5d4434;}
+ul#nav li.active a {color: #5d4434;}
+ul#nav a:hover, ul#nav li.active a {background-image: url(../images/bullet.png); background-position: 0px 4px;}
+
+
+.home-pic-bg {background-image: url(../images/bg-home-pic.png);padding: 14px 18px; margin: 0 20px 0 0;}
+.countdown {background: url(../images/bg-countdown.png) no-repeat;}
+
+ul.social-nav li a.twit {background-image: url(../images/twitter.png);}
+ul.social-nav li a.face {background: url(../images/face.png);}
+ul.social-nav li a.rss {background-image: url(../images/rss.png);}
+
+#footer {background-image: url(../images/bg-slice-footer.gif);}
+

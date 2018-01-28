@@ -1,0 +1,51 @@
+/*
+/***** VINTAGE THEME *****/
+
+body {color: #4a5662;background-image: url(../images/bg-slice-squares.gif);}
+
+h1, h2, h3, h4 {color: #43251a;font-family: Arial, Helvetica, sans-serif;}
+a {color: #d98500;}
+a:hover {color: #43251a;text-decoration: none;}
+span.colour {color: #e7c252;}
+p {font-family: Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4 {font-weight: bold;}
+
+/* Structure
+-------------------------------------------------------------------------------------- */
+#container {background-image: url(../images/bg-slice-content.gif);}
+#content {background-image: url(../images/bg-content-footer.png);}
+#content .inner {background-image: url(../images/bg-content-slice.png);}
+
+/* Header
+-------------------------------------------------------------------------------------- */
+#header h1 {color: #43251a;text-shadow:none;width: 500px;margin: 45px auto 0; font-size: 320%;}
+#header {background-image: url(../images/bg-slice.gif);}
+#header .header-content {background: url(../images/bg-header.png);}
+#header h3 {color: #43251a;background-image: url(../images/bg-header-date.png); line-height: 48px; height: 46px;font-weight: normal; font-size: 15px;
+text-shadow: 1px 1px 0 #f7eedf;}
+#content img {
+	box-shadow: 0 0 5px 2px #ccc;
+-webkit-box-shadow:  0 0 5px 2px #ccc;
+-moz-box-shadow:  0 0 5px 2px #ccc;}
+
+/* Navigation
+-------------------------------------------------------------------------------------- */
+ul#nav li a {color: #d98500;background: url(../images/bullet-grey.png) no-repeat 0px 4px;font-family: Arial, Helvetica, sans-serif; text-transform: none;}
+ul#nav a:hover {color: #43251a;}
+ul#nav li.active a {color: #43251a;}
+ul#nav a:hover, ul#nav li.active a {background-image: url(../images/bullet.png); background-position: 0px 4px;}
+
+.home-pic-bg {background-image: url(../images/bg-home-pic.png);padding: 14px 18px; margin: 0 20px 0 0;}
+.countdown {background-image: url(../images/bg-countdown.png);}
+.countdown h3 {color: #d98500;}
+
+#content .inner img {background: url(../images/bg-slice-squares.gif); padding: 5px;}
+.divider {background: url(../images/bg-divider.gif) repeat-x top left;width: 100%;height: 6px; display: block;}
+
+ul.social-nav li a.twit {background-image: url(../images/twitter.png);}
+ul.social-nav li a.face {background: url(../images/face.png);}
+ul.social-nav li a.rss {background-image: url(../images/rss.png);}
+
+#footer {background-image: url(../images/bg-slice-footer.gif);}
+#footer a {color: #d98500;}
+#footer a:hover {color: #fff;}

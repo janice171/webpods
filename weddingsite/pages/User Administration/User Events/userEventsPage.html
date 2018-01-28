@@ -1,0 +1,51 @@
+<section class="content-main">  
+    <div class="wrapper">
+
+        <div class="home-section">
+            <div id="tabs">
+                <ul id="primary">
+                    <li class="active"><span>Events</span></li>
+                    <ul id="secondary">
+                        <li class="active"><a href="[[+eventPageLink]]">Event List</a></li>               
+                        <li ><a href="[[+eventAddEditPageLink]]">Add/Edit Event</a></li>
+                    </ul>
+                    <li><a href="[[+guestPageLink]]">Guests</a></li>
+                    <li><a href="[[+invitePageLink]]">Invites</a></li>
+                </ul>
+            </div>
+
+            <div id="main-tabs-padding-extra">
+                <div id="content-tabs">
+                    [[!$userEventsPageHeader]]
+                    <div id="event-tabs-1" >
+                        <table id ="eventList">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Location</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th>Max. Guests</th>
+                                    <th>Total Guests</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                [[+userEventList]]
+                            </tbody>
+                        </table>
+                        [[+userSettingError]]
+                    </div>
+
+                    <div class="clearer"></div>
+
+
+
+                </div>
+            </div>
+        </div><!-- / home section -->
+
+    </div><!--.wrapper-->       
+</section>

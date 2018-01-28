@@ -1,0 +1,83 @@
+ul.designs-item .design-thumbs * {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+}
+
+.design-thumbs ul {
+    position: relative;
+    height: 212px;
+    width: 290px;
+}
+
+.design-thumbs ul.magnify {
+    background: white url(../images/magnify.png) scroll no-repeat center center;
+}
+
+.design-thumbs ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dc-unlogged { 
+    display: none;
+}
+
+.design-colours ul li {
+    clear: none;
+    float: left;
+    border: none;
+    width: 20px;
+    margin: 5px 3px !important;
+}
+
+.colour-label {
+    display: block;
+    height: 20px;
+    width: 20px;
+    text-indent: -5000px;
+}
+
+.colour-marine {
+    background: #76C8C8;
+}
+
+.colour-pink {
+    background: #D690CB;
+}
+
+.colour-yellow {
+    background: #DFBE3A;
+}
+
+.colour-blue {
+    background : blue;
+}
+
+.colour-red {
+    background: red
+}
+
+.colour-green {
+    background: green
+}
+
+#lbPrevLink {
+    top: 32px !important;
+    background: transparent url(../images/arrow-left.gif) no-repeat bottom left !important;
+}
+
+#lbNextLink {
+    top: 32px !important;
+    background: transparent url(../images/arrow-right.gif) no-repeat bottom right !important;
+}
+
+#lbCenter {
+    overflow: visible !important;
+    padding-bottom: 32px;
+}
+
+#lbBottomContainer {
+    margin-top: 32px;
+}

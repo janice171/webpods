@@ -1,0 +1,27 @@
+<article class="main-article">
+
+    <form id="galleryAlbumCreateForm" method="post" action="/[[~[[*id]]]]?userPage=[[+userPageId]]">
+        <fieldset>
+            <input id="userCommonUserPageId" name="userCommonUserPageId" type ="hidden" value="[[+userPageId]]"/>
+            <ol>
+
+                <li><label>Album Name:</label>
+                    <input type="text" name="galleryAlbumName" id="galleryAlbumName" class="text">
+                </li>
+
+                <li><label>Description:</label>
+                    <textarea name="galleryAlbumDescription" id="galleryAlbumDescription" class=""></textarea>
+                </li>
+                <li><label>Active:</label>
+                    <input type="checkbox" name="galleryAlbumActive" id="galleryAlbumActive" class="checkbox" value="1">
+                </li>
+                <li><input class="btn-save-changes" type="submit" name="galleryAlbumCreateSubmit" value="Save Changes"/></li>
+            </ol>
+
+
+
+        </fieldset>
+    </form>     
+
+
+</article>

@@ -1,0 +1,44 @@
+/*
+/***** PAPER TEAL THEME *****/
+
+body {color: #453e2f;background: url(../images/bg-slice-squares.gif) repeat;}
+
+h1, h2, h3, h4 {color: #668316;font-family: Arial, Helvetica, sans-serif;}
+a, .countdown h3  {color: #668316;}
+a:hover {color: #453e2f;}
+span.colour, .countdown h4 {color: #a99a5f;}
+p {font-family: Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4 {font-weight: bold;}
+
+/* Structure
+-------------------------------------------------------------------------------------- */
+#container {background-image: url(../images/bg-slice-content.gif);}
+#content {background-image: url(../images/bg-content-footer.png);}
+#content .inner {background-image: url(../images/bg-content-slice.png);}
+
+/* Header
+-------------------------------------------------------------------------------------- */
+#header h1 {color: #668316;text-shadow:none;width: 500px;margin: 45px auto 0; font-size: 320%;}
+#header {background-image: url(../images/bg-slice.gif);}
+#header .header-content {background: url(../images/bg-header.png);}
+#header h3 {color: #5c3f22;background-image: url(../images/bg-header-date.png); line-height: 26px; font-weight: normal; font-size: 15px;
+text-shadow: 1px 1px 0 #f7eedf;}
+
+/* Navigation
+-------------------------------------------------------------------------------------- */
+ul#nav li a {color: #668316;background: url(../images/bullet-grey.png) no-repeat 0px 4px;font-family: Arial, Helvetica, sans-serif;}
+ul#nav a:hover {color: #453e2f;}
+ul#nav li.active a {color: #453e2f;}
+ul#nav a:hover, ul#nav li.active a {background-image: url(../images/bullet.png); background-position: 0px 4px;}
+
+
+.home-pic-bg {background-image: url(../images/bg-home-pic.png);padding: 14px 18px; margin: 0 20px 0 0;}
+.countdown {background: url(../images/bg-countdown.png) no-repeat;}
+
+ul.social-nav li a.twit {background-image: url(../images/twitter.png);}
+ul.social-nav li a.face {background: url(../images/face.png);}
+ul.social-nav li a.rss {background-image: url(../images/rss.png);}
+
+#footer {background-image: url(../images/bg-slice-footer.gif);}
+#footer a {color: #453e2f;}
+#footer a:hover {color: #668316;}

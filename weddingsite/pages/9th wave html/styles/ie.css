@@ -1,0 +1,12 @@
+body {
+    color: #666666;
+	font: normal 80%/150% Georgia, "Times New Roman", Times, serif;
+}
+section.home-section {
+   margin-bottom: 20px;	
+}
+a.blue-button {background:url(../images/btn-blue-172.gif) no-repeat 0px 0px;color:#fff;text-shadow: -1px -1px black; height: 19px; width: 172px; display: block;}
+a.blue-button span {background:none; line-height: 19px;}
+a:hover.blue-button {background-image:url(../images/btn-blue-172.gif);background-position: 0px -37px;color: #000;text-shadow: 1px 1px #3e87d2;cursor:pointer;}
+a:hover.blue-button span {background:none;cursor:pointer; height: 37px;}
+

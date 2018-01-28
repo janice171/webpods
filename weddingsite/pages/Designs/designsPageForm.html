@@ -1,0 +1,33 @@
+<form id="designsForm" method="post" action="/[[~[[*id]]]]">
+    <fieldset>
+    <legend>Filter options: Colours/Styles</legend>
+        <ol>
+            <li>
+                <div class="select-bg">
+                    <select id="designStylesFilter" name="designStylesFilter">
+                        <optgroup label="Styles">
+                            [[+designStyleNames]]
+                        </optgroup>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="select-bg">
+                    <select id="designColoursFilter" name="designColoursFilter">
+                        <optgroup label="Colours">
+                            [[+designColourNames]]
+                        </optgroup>
+                    </select>
+                </div>
+            </li>
+        </ol>
+    </fieldset>
+</form>
+</div>
+<!--/ Designs Header -->
+<div id="themeFilter">
+    <div class="page_navigation pagination"></div>
+    <div class="content">
+[[+designThemes]]
+</div>
+</div>

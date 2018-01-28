@@ -1,0 +1,262 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries */
+
+@body-text: #444444;
+@white: #ffffff;
+@main-colour: #00bfc4;
+
+/* #Site Styles
+================================================== */
+* {
+-moz-box-sizing: box-border;
+-webkit-box-sizing: box-border;
+box-sizing: box-border;
+}
+
+body {
+	background: url(../images/bg-slice-paperTexture.gif);
+	color: @body-text;
+	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#background-top {background: url(../images/bg-top.png) repeat-x;}
+footer {
+	background: url(../images/bg-underline-slice.png) repeat-x left top;
+	padding: 20px 0;
+}
+a {color: @main-colour;
+/* Firefox */
+-moz-transition: 0.5s;
+/* WebKit */
+-webkit-transition: 0.5s;
+/* Opera */
+-o-transition: 0.5s;
+/*ie*/
+-ms-transition: 0.5s;
+/* Standard */
+transition: 0.5s;
+}
+a:hover {color: @body-text;}
+h1 {padding-top: 7px;font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.ten.columns h1, h2, h3, h4 {color: @main-colour; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+h1 { font-size: 35px; line-height: 49px; margin-bottom: 0px;}
+h1.names {font-size: 42px;}
+.divider-long {background: url(../images/bg-underline-slice.png) repeat-x;
+width: 100%; height: 8px; display: block;margin-bottom: 35px;}
+.small {font-size: 80%;}
+.main-colour {color: @main-colour;}
+.ten.columns h1 {font-size: 28px;}
+.ten.columns img {padding: 7px; background: url(../images/bg-underline-slice.png);}
+.ten.columns ul, .ten.columns ol {margin-left: 40px;}
+.ten-columns form ol {list-style: none; margin: 0;}
+
+.divider {background: url(../images/bg-underline-slice.png) repeat-x left top;display: block; width: 100%;margin: 10px 0; padding: 10px 0;}
+
+hr { border-color: #ccc; }
+
+/* #Navigation
+================================================== */
+
+#navBox {
+    margin: 0 0 23px;
+    position: relative;
+}
+.navTop {
+    background: url("../images/nav-bg-top.png") no-repeat;
+    height: 136px;
+    width: 220px;
+}
+.navBottom {
+    background: url("../images/nav-bg-bottom.png") no-repeat;
+    height: 84px;
+    width: 220px;
+}
+.nav-slice {
+	background: url("../images/nav-bg-slice.png") repeat-y;
+}
+nav.primary ul, nav.primary ul li {
+    margin: 0;
+    text-align: center;
+}
+nav.primary select {
+    display: none;
+    height: 28px;
+    margin: 21px 0;
+    width: 100%;
+}
+nav.primary ul li a {
+    line-height: 28px;
+    text-decoration: none;
+    padding: 7px 5px 5px 5px;
+    color: @body-text;
+/* Firefox */
+-moz-transition: background 0.5s linear;
+/* WebKit */
+-webkit-transition: background 0.5s linear;
+/* Opera */
+-o-transition: background 0.5s linear;
+/*ie*/
+-ms-transition: background 0.5s linear;
+/* Standard */
+transition: background 0.5s linear;
+}
+nav.primary ul li span {
+    display: none;
+}
+/*nav.primary ul li:hover > a {
+    background: none repeat scroll 0 0 @main-colour;
+}*/
+nav.primary ul li a:hover, nav.primary ul li.active a {
+    background: @main-colour;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 2px;
+    -moz-border-radius: 2px; /* Border radius with vendor prefix for Firefox and Mozilla browsers. */
+    -webkit-border-radius: 2px; /* As above, but for Safari and Chrome browsers */
+    color: @white;
+}
+nav.primary ul li span {
+    display: none;
+}
+nav.primary ul li:hover > a {
+    background: none repeat scroll 0 0 @main-colour;
+}
+
+
+/* #Page styles
+================================================== */
+.date {background: url(../images/bg-diagonal.png);padding: 7px;
+color: @white; height: 50px; text-align: center;width: 100%;}
+.date p {margin: 0;line-height: 1.1em;}
+.date p span.day {font-size: 2em;line-height: 0.8em;}
+.date p span.month {font-size: 1.5em;line-height: 0.8em;}
+.date p span.year {font-size: 1.2em;line-height: 0.8em;}
+
+/* SOCIAL ICONS */
+ul.social-nav {width: 100%; height: 39px; margin: 10px auto;text-align: center;}
+ul.social-nav li {display: inline;}
+ul.social-nav li a {
+display:inline-block;
+height:39px;
+margin:0 3px;
+text-indent:-9999px;
+width:44px;
+}
+ul.social-nav li a.twit {background: url(../images/twitter.png) no-repeat 0px 0px;}
+ul.social-nav li a.face {background: url(../images/face.png) no-repeat 0px 0px;}
+ul.social-nav li a.rss {background: url(../images/rss.png) no-repeat 0px 0px;}
+ul.social-nav li a.twit:hover, ul.social-nav li a.face:hover, ul.social-nav li a.rss:hover
+{background-position: 0px -39px;}
+
+/* COUNTDOWN */
+.countdown {background: url(../images/bg-diagonal.png) repeat; width:100%; text-align: center; padding: 15px 5px; margin: 10px 0;}
+.countdown h4, .countdown h3 {margin: 0;color: @white;}
+.countdown h3 {font-size: 150%;font-weight: bold;}
+
+
+/* #Footer content + #Bottom content
+================================================== */
+footer a {color: @body-text; line-height: 34px; vertical-align: top;}
+footer a:hover {color: @main-colour;}
+.first-credit img {margin-right: 10px;
+	zoom: 1;
+	filter: alpha(opacity=70);
+	opacity: 0.7;}
+.first-credit p, .last-credit p {margin: 0;}
+.first-credit p a {}
+.last-credit p {text-align: right;}
+
+.userGalleryAlbums {height: 20px;}
+.userGalleryAlbums li {float: left; margin: 0 13px 0 0;}
+.userGalleryAlbums li a {background: url(../images/bullet.png) no-repeat left center; padding: 0 0 0 10px;}
+
+.ten.columns .es-carousel ul li a img {border: none; box-shadow: none; margin: 0;padding: 0;}
+.ten.columns .rg-image img {border: none; margin: 0;padding: 0;}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	footer .first-credit p, footer .last-credit p {
+			text-align: center;
+			margin-bottom: 7px;
+		}
+		footer .first-credit p img {padding: 0 20px;}
+		.navTop {background: url(../images/nav-bg-top-mobile.png) top center; width: 100%;}
+		.nav-slice, .navBottom {background: none;}	
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+	
+	footer .first-credit p, footer .last-credit p {
+			text-align: center;
+			margin-bottom: 7px;
+		}
+		footer .first-credit p img {padding: 0 20px;}
+		.navTop {background: url(../images/nav-bg-top-mobile.png) top center; width: 100%;}
+		.nav-slice, .navBottom {background: none;}
+		h1.names {text-align: center;}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+		footer .first-credit p, footer .last-credit p {
+			text-align: center;
+			margin-bottom: 7px;
+		}
+		footer .first-credit p img {padding: 0 20px;}
+		.navTop {background: url(../images/nav-bg-top-mobile.png) top center; width: 100%;}
+		.nav-slice, .navBottom {background: none;}
+		nav.primary {
+			padding: 21px 0;
+		}
+		
+		nav.primary select {
+			display: block;
+		}
+		
+		nav.primary ul {
+			display: none;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		
+		footer .first-credit p, footer .last-credit p {
+			text-align: center;
+			margin-bottom: 7px;
+		}
+		footer .first-credit p img {padding: 0 60px; margin: 0;}
+		.navTop {background: url(../images/nav-bg-top-mobile.png) top center; width: 100%;}
+		.nav-slice, .navBottom {background: none;}
+		nav.primary {
+			padding: 21px 0;
+		}
+		
+		nav.primary select {
+			display: block;
+		}
+		
+		nav.primary ul {
+			display: none;
+		}
+	
+	}

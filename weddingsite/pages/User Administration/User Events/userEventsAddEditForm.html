@@ -1,0 +1,69 @@
+<form id="eventAddEditForm" method="post" action="/[[~[[*id]]]]">
+        <fieldset>
+            <ol>
+                <input id="userEventsId" name="userEventsId" type="hidden" value="[[+userEventsId]]"/>
+                <li><label for="userEventsName">Name:
+                    </label>
+                    <input id="userEventsName" class="text required validcharsgeneral" name="userEventsName" type="text" value="[[+userEventsName]]"/>
+                    <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsEmail">Date:
+                    </label>
+                    <input id="userEventsDate" class="text required" name="userEventsDate" type="text" value="[[+userEventsDate]]"/>
+                    <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsLocation">Location:
+                    </label>
+                    <input id="userEventsLocation" class="text required validcharaddress" name="userEventsLocation" type="text" value="[[+userEventsLocation]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsAddress2">Address 2:
+                    </label>
+                    <input id="userEventsAddress2" class="text validcharsaddress" name="userEventsAddress2" type="text" value="[[+userEventsAddress2]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsAddress3">Address 3:
+                    </label>
+                    <input id="userEventsAddress3" class="text validcharsaddress" name="userEventsAddress3" type="text" value="[[+userEventsAddress3]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsAddress4">Address 4:
+                    </label>
+                    <input id="userEventsAddress4" class="text validcharsaddress" name="userEventsAddress4" type="text" value="[[+userEventsAddress4]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsStartTime">Start Time:
+                    </label>
+                    <input id="userEventsStartTime" class="text validcharsgeneral" name="userEventsStartTime" type="text" value="[[+userEventsStartTime]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsEndTime">End Time:
+                    </label>
+                    <input id="userEventsEndTime" class="text validcharsgeneral" name="userEventsEndTime" type="text" value="[[+userEventsEndTime]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsMaxGuests">Max. Guests:
+                    </label>
+                    <input id="userEventsMaxGuests" class="text validcharsgeneral" name="userEventsMaxGuests" type="text" value="[[+userEventsMaxGuests]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userEventsNotes">Notes:
+                    </label>
+                <textarea id="userEventsNotes" class="text" name="userEventsNotes" rows="10">
+                   [[+userEventsNotes]]
+                </textarea>
+                <div id="formvalidationerror" ></div>
+                </li>
+            </ol>
+
+        </fieldset>
+
+
+        <fieldset class="submit">
+            <input class="submit-buy" type="submit" value="Save" name="userEventsAddEditSubmit"/>
+        </fieldset>
+        </aside>
+
+</form>
+
+<div class="servererror"><strong>[[+userEventError]]</strong></div>

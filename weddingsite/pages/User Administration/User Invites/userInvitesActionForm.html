@@ -1,0 +1,25 @@
+<form id="userInvitesActionForm" method="post" action="/[[~[[*id]]]]">
+    <fieldset>
+        <ol>  
+         <li>  
+              <label for="userInvitesThemeSelection"></label>
+               <div class="select-bg">
+                    <select name="userInvitesThemeSelection" id="userInvitesThemeSelection" class="valid">
+                       [[+userInvitesThemes]]
+                     </select>
+                 </div>
+                <div id="formvalidationerror"></div>
+            </li>
+            
+             <li>  
+              <label for="userInvitesColourSelection"></label>
+               <div class="select-bg">
+                    <select name="userInvitesColourSelection" id="userInvitesColourSelection" class="valid">
+                        [[+userInvitesColours]]
+                     </select>
+                 </div>
+                <div id="formvalidationerror"></div>
+            </li>
+
+      </fieldset>
+    </form>

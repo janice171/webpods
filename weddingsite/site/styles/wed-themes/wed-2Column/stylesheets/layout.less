@@ -1,0 +1,124 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries*/
+
+@body-text: #666;
+@main-colour: #4db191;
+@second-colour: #000;
+@white: #fff;
+
+/* #Site Styles
+================================================== */
+* {
+-moz-box-sizing: box-border;
+-webkit-box-sizing: box-border;
+box-sizing: box-border;
+}
+
+body {
+	color: @body-text;
+	background: url(../images/bg-paisley-dec-green.gif);
+	font: 14px/21px Helvetica, Arial, sans-serif; /* based on 7px increments for baseline consistency */
+	padding: 20px 0;
+}
+.white-bg {background: @white;
+box-shadow: 0px 1px 5px 1px #444;
+-webkit-box-shadow: 0px 1px 5px 1px #444;
+-moz-box-shadow: 0px 1px 5px 1px #444;
+}
+a {color: @main-colour;
+text-decoration: none;}
+a:hover {color: @body-text;}
+h1 {color: @main-colour;padding-top: 7px;font-size: 28px;}
+h2, h3, h4 {color: @main-colour;}
+h2.dec {line-height: 28px;}
+ul {margin-left: 10px;}
+ol {margin-left: 40px;}
+ul li {padding-left: 10px;background: url(../images/bullet.gif) no-repeat left center; }
+/* #Misc Styles
+======================================== */
+.tinynav { display: none }
+ul#nav {margin: 0 0 20px 0;}
+#nav li {background: url(../images/bullet.gif) no-repeat 0px 4px;margin-bottom: 7px;padding: 0 0 0 10px;line-height: 14px;}
+#nav a {}
+#nav li:hover, #nav li.active{color: @second-colour;background: url(../images/nav-bullet-green.gif) no-repeat 0px 4px;}
+ #nav li.active a {color: @second-colour;}
+/* #Misc Styles
+======================================== */
+.divider {width:100%; height:11px; background: url(../images/dot-slice.gif) repeat-x left top; clear: both;}
+.breadcrumbs {background: url(../images/dot-slice.gif) repeat-x left bottom; padding: 0;}
+.breadcrumbs p{font-style:italic; font-size: 13px;}
+.content img {padding: 5px; border: 1px dotted @body-text;}
+.countdown {background: @main-colour; padding: 7px;text-align: center;margin-bottom: 10px;}
+.countdown h4 {font-size: 14px;color: @white;}
+.countdown h3 {color: @second-colour;}
+.details {text-align: center;}
+.details h1 {line-height: 28px;margin: 0; padding:0;}
+.details p{
+   background-color: @second-colour;
+   height: 20px;
+   font-size: 12px;
+   color: @white;
+   width: 20px;
+   border-radius: 10px;
+	-moz-border-radius:10px; /* Border radius with vendor prefix for Firefox and Mozilla browsers. */
+	-webkit-border-radius: 10px; /* As above, but for Safari and Chrome browsers */
+	display: block;
+	margin: 0 auto;
+}
+.details h3 {color: @body-text; font-size: 16px;}
+
+/* #Footer
+================================================== */
+footer {overflow: hidden;font-size: 12px;clear: both;}
+.first-credit img {margin-right: 10px;
+	zoom: 1;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	border: none;}
+.first-credit p, .last-credit p {margin: 0;}
+.first-credit p a {}
+.last-credit p {text-align: right;}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+		.details h1 {font-size: 21px;}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+		.details h1 {font-size: 21px;}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.tinynav { display: block }
+	    #nav { display: none }
+		
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.tinynav { display: block }
+	    #nav { display: none }
+	
+	}
+	

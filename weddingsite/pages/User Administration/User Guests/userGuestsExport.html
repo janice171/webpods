@@ -1,0 +1,41 @@
+<section class="content-main">  
+    <div class="wrapper">
+
+        <div class="home-section">
+            <div id="tabs">
+                <ul id="primary">
+                    <li><a href="[[+eventPageLink]]">Events</a></li>
+                    <li><span>Guests</span>
+                        <ul id="secondary">
+
+                            <li><a href="[[+guestPageLink]]">Guest List</a></li>   
+                            <li><a href="[[+guestAddEditPageLink]]">Add/Edit Guest</a></li>
+                            <li><a href=[[+guestImportPageLink]]">Import Guests</a></li>
+                            <li class="active"><a href="[[+guestExportPageLink]]">Export Guests</a></li>
+                        </ul>
+
+
+                    </li>
+                    <li><a href="[[+invitePageLink]]">Invites</a></li>
+                </ul>
+            </div>
+
+            <div id="main-tabs-padding-extra">
+                <div id="content-tabs">
+                    [[$userGuestsExportHeader]]
+                    <div class="wrapper-twocol">          
+                        [[$userGuestsExportForm]]
+                        <div class="servererror"><strong>[[+userSettingError]]</strong></div>
+
+                        <div class="clearer"></div>
+                    </div><!--.wrapper-->
+
+
+                </div>
+            </div>
+
+
+        </div><!-- / home section -->
+    </div><!--.wrapper-->
+
+</section>

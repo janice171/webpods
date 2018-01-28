@@ -1,0 +1,21 @@
+<div id="userEditRSVPMessageTextarea">
+    
+    <form id="userEditRSVPMessageForm" method="post" action="/[[~[[*id]]]]?userPage=[[+userPageId]]">
+        <fieldset>
+        <ol>
+            <li><label for="userEditRSVPMessageSender">From:
+                </label>
+                <input class="text" type="text"  id="userEditRSVPMessageSender" name="userEditRSVPMessageSender" readonly />
+            </li>
+            <li><label for="userEditRSVPMessageTitle">Subject:
+                </label>
+                <input class="message-subject" type="text"  id="userEditRSVPMessageTitle" name="userEditRSVPMessageTitle" readonly />
+            </li>
+        </ol>
+</fieldset>
+        <textarea id="userEditRSVPMessageContent" name="userEditRSVPMessageContent" class="text" rows="10" style="width:100%" readonly>
+        [[+userEditRSVPMessageContent]]
+        </textarea>
+ </form>
+    
+</div>

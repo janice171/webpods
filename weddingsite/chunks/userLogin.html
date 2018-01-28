@@ -1,0 +1,28 @@
+<div >
+    <div class="loginMessage">[[+errors]]</div>
+    <div >
+        <form action="[[~[[*id]]]]" method="post">
+            <fieldset>
+              <legend class="dec">[[+actionMsg]]</legend>
+              <ol>
+                <li>
+                <label> [[%login.username]]<br /><em>This is your email address</em>
+                    <input class="text" type="text" name="username" />
+                  </label></li>
+                
+                <li><label>[[%login.password]]
+                    <input class="text" type="password" name="password" />
+                  </label></li>
+                <input type="hidden" name="returnUrl" value="[[+request_uri]]" />
+
+                [[+login.recaptcha_html]]
+                
+                <input type="hidden" name="service" value="login" />
+                <fieldset class="submit">
+                  <input class="" type="submit" name="Login" value="Log In" />
+                </fieldset>
+              </ol>
+            </fieldset>
+        </form>
+    </div>
+  </div>

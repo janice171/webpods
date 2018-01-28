@@ -1,0 +1,40 @@
+/*
+/***** PINK THEME *****/
+
+body {color: #666;background-image: url(../images/bg-slice-squares.gif);}
+
+h1, h2, h3, h4 {color: #0187a4;}
+a	{color: #0187a4;}
+a:hover {color: #000;text-decoration: underline;}
+span.colour {color: #c3c3c2;}
+p {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+h1, h2, h3, h4 {font-weight: normal;}
+
+/* Structure
+-------------------------------------------------------------------------------------- */
+#container {background-image: url(../images/bg-slice-content.gif);}
+#content {background-image: url(../images/bg-content-footer.png);}
+#content .inner {}
+
+/* Header
+-------------------------------------------------------------------------------------- */
+#header h1 {color: #0187a4;}
+#header {background-image: url(../images/bg-slice.gif);}
+#header .header-content {background: url(../images/bg-header.png);}
+#header h3 {color: #fff;background-image: url(../images/bg-header-date.png);text-shadow: -1px -1px 0 #000;}
+
+/* Navigation
+-------------------------------------------------------------------------------------- */
+ul#nav li a {color: #0187a4;}
+ul#nav a:hover, ul#nav li.active a  {color: #111; background-image: url(../images/bullet-grey.png);}
+
+.home-pic-bg {background-image: url(../images/bg-home-pic.png);}
+.countdown {background-image: url(../images/bg-countdown.png);}
+
+ul.social-nav li a.twit {background-image: url(../images/twitter.png);}
+ul.social-nav li a.face {background: url(../images/face.png);}
+ul.social-nav li a.rss {background-image: url(../images/rss.png);}
+
+#footer {background-image: url(../images/bg-slice-footer.gif);}
+#footer a {color: #fff;}
+#footer a:hover {color: #000;}

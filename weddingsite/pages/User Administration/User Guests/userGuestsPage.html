@@ -1,0 +1,52 @@
+<section class="content-main">  
+    <div class="wrapper">
+
+        <div class="home-section">
+            <div id="tabs">
+                <ul id="primary">
+                    <li><a href="[[+eventPageLink]]">Events</a></li>
+                    <li class="active"><span>Guests</span>
+                        <ul id="secondary">
+                            <li class="active"><a href="[[+guestPageLink]]">Guest List</a></li>                                      
+                            <li><a href="[[+guestAddEditPageLink]]">Add/Edit Guest</a></li>
+                           <!-- <li><a href="[[+guestImportPageLink]]">Import Guests</a></li>
+                            <li><a href="[[+guestExportPageLink]]">Export Guests</a></li>-->
+                        </ul>
+
+
+                    </li>
+                    <li><a href="[[+invitePageLink]]">Invites</a></li>
+                </ul>
+            </div>
+
+            <div id="main-tabs-padding-extra">
+                <div id="content-tabs">
+                    <p>Double click in the entries in the table below to make changes.</p>
+                    <div id="guest-tabs-1" >
+                        <table id ="guestList">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    [[+userGuestEventColumns]]
+                                    <th>Guest Of</th>
+                                    <th>Guest code (for RSVP)</th>                                        
+                                    <th>Active</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                [[+userGuestList]]
+                            </tbody>
+                        </table>
+                        [[+userSettingError]]
+                    </div>
+
+                    <div class="clearer"></div>
+                </div>
+            </div>
+        </div><!-- / home section -->
+
+    </div><!--.wrapper-->       
+</section>

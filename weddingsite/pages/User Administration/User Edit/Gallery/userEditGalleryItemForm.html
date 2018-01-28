@@ -1,0 +1,68 @@
+<div class="wrapper-user-area">
+
+    <div class="user-edit-left">
+        <form id="userEditGalleryItemAlbumForm" method="post" action="/[[~[[*id]]]]?userPage=[[+userPageId]]">
+            <fieldset>
+                <ol>
+                    <li><label class="user-edit-label">Album name:</label>
+                        <input class="text" name="userEditGalleryItemAlbumName"  id="userEditGalleryItemAlbumName"  type="text" /></li>
+
+                    <li><label class="user-edit-label" for="">Album Description:</label>
+                        <textarea name="userEditGalleryItemAlbumDescription" rows="4" cols="20" id="userEditGalleryItemAlbumDescription"></textarea></li>
+
+                </ol>
+            </fieldset>
+
+    </div>
+    <div class="user-edit-right">
+        <input class="btn-save-changes" type="button" name="userEditGalleryItemAlbumSubmit" value="Save Changes" onClick="WS.albumDetailUpdate();"/><br/></br/><br/>
+     <div><a class="button" onclick=" window.location.replace(window.location.href);"><span>Back to Albums...</span></a></div>    
+
+    </div>
+
+</form>
+
+<div class="servererror"><strong></strong></div>
+
+<div class="divider">&nbsp;</div>
+</div><!-- / wrapper user area -->
+
+ <div id="galleryDragDropText" class="galleryDragDrop"></div>
+<div id="gallery-panel">
+    <!--<ul class="user-buttons"> </ul>-->
+    <div class="gallery-inner">
+     
+        <div id="userEditGalleryItems" class="gallery-items">
+            
+
+        </div><!-- / gallery-items -->
+
+        <div class="gallery-detail">
+            <div class="gallery-detail-thumb">
+                <img class="gallery-itemEditImage" src="assets/templates/wedding/images/small/ornate-classic-silverBlue.jpg" alt="" />
+                <div class="divider"> </div>
+            </div>
+            <div class="gallery-detail-info">
+                 <form id="userEditGalleryItemDetailForm" method="post" action="/[[~[[*id]]]]?userPage=[[+userPageId]]">
+                     <input type="hidden" name="userEditGalleryItemId" id="userEditGalleryItemId">
+                  <fieldset>
+                    <ol>
+                       <li><label>Photo Name:</label><input type="text" name="userEditGalleryItemDisplayName" id="userEditGalleryItemDisplayName" class="text"></li>
+                       <li><label>Photo Description:</label><textarea name="userEditGalleryItemDescription" id="userEditGalleryItemDescription" class=""></textarea></li>
+                       <li><label>Album Image:</label><input type="checkbox" name="userEditGalleryItemAlbumImage" id="userEditGalleryItemAlbumImage" class="checkbox" value="1"></li>
+                    </ol>
+                     </fieldset>
+                    </form>
+                        <p>Delete Photo<a title="Delete" class="delete userEditGalleryItemDelete" href=""></a></p>
+                        <p id="userEditGalleryItemLegend" ></p>
+  </div>
+
+        </div><!-- / gallery-detail -->
+
+
+    </div><!-- / gallery-inner -->
+    <div id="uploader">
+        <p>You browser doesn't have Flash, Silverlight, Gears, BrowserPlus or HTML5 support.</p>
+    </div>
+
+</div><!-- / gallery-panel -->

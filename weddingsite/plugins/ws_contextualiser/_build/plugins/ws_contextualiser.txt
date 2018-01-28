@@ -1,0 +1,44 @@
+<?php
+/**
+ * Wedding site Contextualiser plugin
+ *
+ * @author    S. Hamblett <steve.hamblett@linux.com>
+ * @copyright 2010 S. Hamblett
+ * @license   GPLv3 http://www.gnu.org/licenses/gpl.html
+ */
+
+/* Mappings take the form 'host:context,host:context....' in the $contextMap property */
+
+$found = false;
+
+/* Check for any context mappings */
+if ( !empty($contextMap) )  {
+	
+	/* Got some, decode them */
+	$map = explode(',' , $contextMap);
+	
+	foreach ($map as $mapping ) {
+		
+		$mapping_split = explode(':', $mapping);
+		$host = $_SERVER['HTTP_HOST'];
+		if ( $host == $mapping_split[0] ) {
+			
+			/* Found one */
+			$context = $mapping_split[1];
+			$found = true;
+			break;
+		
+		}
+	}
+
+	/* Switch if found */
+    if ( $found === true ) {
+   
+    $modx->switchContext($context);
+    /* Re get the user if any for this context */
+    $modx->user = null;
+    $modx->getUser($context);
+    
+  }
+	
+}

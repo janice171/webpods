@@ -1,0 +1,53 @@
+<form id="personalForm" method="post" action="/[[~[[*id]]]]">
+    <input type="hidden" name="userSettingsPersonalSubmit" value="true"/>
+    <fieldset>
+        <ol>
+            <li><label for="userSettingsFirstName">Your first name:
+                    </label>
+                    <input id="userSettingsFirstName" class="text required validcharsgeneral  tobackend" name="userSettingsFirstName" type="text" value="[[+userSettingsFirstName]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsLastName">Your last name:
+                    </label>
+                    <input id="userSettingsLastName" class="text required validcharsgeneral  tobackend" name="userSettingsLastName" type="text" value="[[+userSettingsLastName]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsEmail">Email:
+                    </label>
+                    <input id="userSettingsEmail" class="text required email  tobackend" name="userSettingsEmail" type="text" value="[[+userSettingsEmail]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsAddressStreet">Your address (street):
+                    </label>
+                    <input id="userSettingsAddressStreet" class="text required validcharsaddress  tobackend" name="userSettingsAddressStreet" type="text" value="[[+userSettingsAddressStreet]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsTel">Telephone:
+                    </label>
+                    <input id="userSettingsTel" class="text required validcharsgeneral tobackend" name="userSettingsTel" type="text" value="[[+userSettingsTel]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+            <li><label for="userSettingsCity">City:
+                    </label>
+                    <input id="userSettingsCity" class="text required validcharsgeneral  tobackend" name="userSettingsCity" type="text" value="[[+userSettingsCity]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsCountry">
+                    Country:
+            </label>
+                <select id="userSettingsCountry" name="userSettingsCountry" class="tobackend">
+                        [[+userSettingsCountries]]
+                </select>
+                <div id="formvalidationerror" ></div>
+
+            </li>
+        </ol>
+
+    </fieldset>
+
+
+    <fieldset class="submit">
+        <input class="submit-buy" type="submit" value="Save" name="userSettingsPersonalSubmit" id="userSettingsPersonalSubmit"/>
+    </fieldset>
+
+</form>

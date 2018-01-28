@@ -1,0 +1,54 @@
+<form id="websiteForm" name="websiteForm" method="post" action="/[[~[[*id]]]]">
+    <input type="hidden" name="userSettingsWebsiteSubmit" value="true"/>
+    <fieldset>
+        <ol>
+            <li><label for="userSettingsWebsiteAddress">Your website URL:
+                </label>
+                <input id="userSettingsWebsiteAddress" class="text required validcharsURL tobackend" name="userSettingsWebsiteAddress" type="text" value="[[+userSettingsWebsiteAddress]]" /> .theweddingwebsitegroup.com
+                <div id="formvalidationerror" ></div>
+            </li>
+            <li><label>Website package: <strong><a href="[[+packagePage]]" title="upgrade package" style="text-decoration: underline;">Upgrade package</a></strong></label>
+                <input id="userSettingsPackage" class="text  tobackend" name="userSettingsPackage" type="text" value="[[+userSettingsPackage]]"  readonly/></li>
+
+            <li><label for="userSettingsPartner1">Your Name:
+                </label>
+                <input id="userSettingsPartner1" class="text required validcharsgeneral  tobackend" name="userSettingsPartner1" type="text" value="[[+userSettingsPartner1]]"/>
+                <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsPartner2">Your Partners Name:
+                </label>
+                <input id="userSettingsPartner2" class="text required validcharsgeneral  tobackend" name="userSettingsPartner2" type="text" value="[[+userSettingsPartner2]]"/>
+                <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsDatepicker">Date of wedding:
+                </label>
+                <input id="userSettingsDatepicker" class="text required" name="userSettingsDatepicker" type="text" value="[[+userSettingsDatepicker]]"/>
+            </li>
+          <li><label for="userSettingsTheme">Your theme: <strong><a href="[[+designsPage]]" style="text-decoration: underline;">Change theme</a></strong></label>
+                <input id="userSettingsTheme" class="text  tobackend" name="userSettingsTheme" type="text" value="[[+userSettingsTheme]]" readonly/>
+
+            </li>
+            <li><input id="userSettingsWebsiteSearchable" class="checkbox" name="userSettingsWebsiteSearchable" type="checkbox" value="1" [[+userSettingsWebsiteSearchable]]/><label>Do you want your site to be found by the search engines e.g. Google, Yahoo etc?</label>
+          </li>
+            <li> <input id="userSettingsDisplayCountdown" class="checkbox" name="userSettingsDisplayCountdown" type="checkbox" value="1" [[+userSettingsDisplayCountdown]]/>
+              <label>Do you want a countdown to your wedding day on the website?</label>
+          </li>
+ <li> <input id="userSettingsModerateGuestbook" class="checkbox" name="userSettingsModerateGuestbook" type="checkbox" value="1" [[+userSettingsModerateGuestbook]]/><label>Moderate Guestbook</label></li>
+            <li> <input id="userSettingsPassProtect" class="checkbox" name="userSettingsPassProtect" type="checkbox" value="1" [[+userSettingsPassProtect]]/><label>Do you want anyone visiting your website to enter a password?</label></li>
+            <div class="list-twocol">
+                <li><label>Password:</label><input id="userSettingsPassword" class="text  tobackend" name="userSettingsPassword" type="password" value="[[+userSettingsPassword]]"/>
+                </li>
+            </div>
+            <div class="list-twocol">
+                <li><label>Repeat Password:</label><input id="userSettingsPasswordRepeat" class="text" name="userSettingsPasswordRepeat" type="password" value="[[+userSettingsPasswordRepeat]]"/>
+                </li>
+            </div>
+            
+        </ol>
+
+    </fieldset>
+    <fieldset class="submit">
+        <input class="button" type="submit" value="Save website settings" name="userSettingsWebsiteSubmit" id="userSettingsWebsiteSubmit"/>
+    </fieldset>
+
+</form>

@@ -1,0 +1,119 @@
+<script type="text/javascript">
+ var RecaptchaOptions = {
+    theme : 'clean'
+ };
+ </script>
+<form id="registrationForm" method="post" action="/[[~[[*id]]]]">
+<input id="registrationType" name="registrationType" type="hidden" value="[[+registrationType]]" />
+          <fieldset>
+              <legend class="dec">Personal details</legend>
+            
+                        <ol>
+                          <li><label for="userSettingsFirstName">Your first name:<span class="required-icon"></span>
+                    </label>
+                    <input id="userSettingsFirstName" class="text required validcharsgeneral" name="userSettingsFirstName" type="text" value="[[+userSettingsFirstName]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsLastName">Your last name:<span class="required-icon"></span>
+                    </label>
+                    <input id="userSettingsLastName" class="text required validcharsgeneral" name="userSettingsLastName" type="text" value="[[+userSettingsLastName]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>
+           
+            <li><label for="userSettingsTel">Telephone:
+                    </label>
+                    <input id="userSettingsTel" class="text validcharsgeneral" name="userSettingsTel" type="text" value="[[+userSettingsTel]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                           <li><label for="userSettingsAddressStreet">Your address:<span class="required-icon"></span>
+                    </label>
+                    <input id="userSettingsAddressStreet" class="text required validcharsaddress" name="userSettingsAddressStreet" type="text" value="[[+userSettingsAddressStreet]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>
+         <!--   <li><label for="userSettingsCity">City:
+                    </label>
+                    <input id="userSettingsCity" class="text required validcharsgeneral" name="userSettingsCity" type="text" value="[[+userSettingsCity]]"/>
+                    <div id="formvalidationerror" ></div>
+            </li>-->
+            <li><label for="userSettingsCountry">
+                    Country:
+            </label>
+              <div class="select-bg">
+                <select id="userSettingsCountry" name="userSettingsCountry" >
+                        [[+userSettingsCountries]]
+                </select>
+              </div>
+                <div id="formvalidationerror" ></div>
+
+            </li>
+</ol>
+                     </fieldset>
+                        <fieldset>
+              <legend class="dec">Website Details</legend>
+            <p>Please enter a website name for your wedding website. If for instance you chose <strong>steveandjune</strong> for your website name your website
+            URL will be <strong>http://steveandjune.theweddingwebsitegroup.com</strong></p>
+              <ol>
+                <li><label for="userRegistrationWebsiteName">Your Website Name:<span class="required-icon"></span>
+                </label>
+                <input id="userRegistrationWebsiteName" class="text required validcharsURL" name="userRegistrationWebsiteName" type="text" /><span id="website-name-suffix">.theweddingwebsitegroup.com</span>
+                <div id="formvalidationerror" ></div>
+            </li>
+            
+                <li><label for="userSettingsPartner1">Your name: <span class="required-icon"></span><em>(this will display on the website)</em>
+                </label>
+                <input id="userSettingsPartner1" class="text required validcharsgeneral" name="userSettingsPartner1" type="text" value="[[+userSettingsPartner1]]"/>
+                <div id="formvalidationerror" ></div>
+            </li>
+                <li><label for="userSettingsPartner2">Your partner's name: <span class="required-icon"></span><em>(this will display on the website)</em>
+                </label>
+                <input id="userSettingsPartner2" class="text required validcharsgeneral" name="userSettingsPartner2" type="text" value="[[+userSettingsPartner2]]"/>
+                <div id="formvalidationerror" ></div>
+            </li>
+            <li><label for="userSettingsDatepicker">Date of the wedding:<span class="required-icon"></span>
+                </label>
+                <input id="userSettingsDatepicker" class="text required" name="userSettingsDatepicker" type="text" value="[[+userSettingsDatepicker]]"/>
+                <div id="formvalidationerror" ></div>
+            </li>
+                  
+              </ol>
+              </fieldset>
+                      <fieldset>
+                        <legend class="dec">User details</legend>
+                        <p>Please enter your <strong>email address</strong> and choose a password to start your 7 day trial</p>
+                         <ol>
+                           <li><label for="registrationEmail">Email (this will be your username):<span class="required-icon"></span>
+                        </label>
+                          <input id="registrationEmail" class="text required email" name="registrationEmail" type="text" />
+                        </li>
+<li><label for="userPassword">Choose a password:<span class="required-icon"></span>
+                          </label>
+                          <input id="userPassword" class="text required" name="userPassword" type="password" />
+                         </li>
+<li><label for="userPasswordRetype">Retype password:<span class="required-icon"></span>
+                        </label>
+                          <input id="userPasswordRetype" class="text required" name="userPasswordRetype" type="password" />
+                        </li>
+<li>
+                          <fieldset>
+                           <legend>Agree terms<span class="required-icon"></span></legend><br />
+                           <ol>
+<li> 
+<label for="agreeTerms">I agree to the <a href="[[~36~]]" title="terms and conditions">terms and conditions</a></label><input id="agreeTerms" class="checkbox required" name="agreeTerms" type="checkbox" value="1" />
+                            
+                           </li>
+</ol>
+                       </fieldset>
+                       </li>
+</ol>
+                       </fieldset>
+<!-- [[+registration.recaptcha]] -->
+                    <fieldset class="submit">
+                     
+                      <input class="button" type="submit" name="registrationSubmitTrial" value="Try demo" /> or
+                        <input class="button-alt" type="submit" name ="registrationSubmitPaid" value="Buy package" />
+                 </fieldset>
+
+                 
+        </form>
+
+ <div class="servererror" ><strong>[[+registrationError]]</strong></div>

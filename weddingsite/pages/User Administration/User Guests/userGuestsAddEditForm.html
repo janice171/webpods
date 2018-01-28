@@ -1,0 +1,69 @@
+<form id="guestAddEditForm" method="post" action="/[[~[[*id]]]]">
+    <aside class="left210">
+        <div class="user-menu-col1">Options<span>Yes/No</span></div>
+        <ul class="list-options">
+            [[+userGuestAddEditEvents]]
+        </ul>
+    </aside>
+    <article class="main-article">
+        <fieldset>
+            <ol>
+                <input id="userGuestsId" name="userGuestsId" type="hidden" value="[[+userGuestsId]]"/>
+                <li><label for="userGuestsName">Name:
+                    </label>
+                    <input id="userGuestsName" class="text required validcharsgeneral" name="userGuestsName" type="text" value="[[+userGuestsName]]"/>
+                    <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userGuestsEmail">Email:
+                    </label>
+                    <input id="userGuestsEmail" class="text required email" name="userGuestsEmail" type="text" value="[[+userGuestsEmail]]"/>
+                    <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userGuestsAddressLine1">Address - first line:
+                    </label>
+                    <input id="userGuestsAddressLine1" class="text validcharsgeneral" name="userGuestsAddressLine1" type="text" value="[[+userGuestsAddressLine1]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userGuestsAddressLine2">Address - second line:
+                    </label>
+                    <input id="userGuestsAddressLine2" class="text validcharsgeneral" name="userGuestsAddressLine2" type="text" value="[[+userGuestsAddressLine2]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userGuestsCity">City:
+                    </label>
+                    <input id="userGuestsCity" class="text validcharsgeneral" name="userGuestsCity" type="text" value="[[+userGuestsCity]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userGuestsPostcode">Postcode:
+                    </label>
+                    <input id="userGuestsPostcode" class="text validcharsgeneral" name="userGuestsPostcode" type="text" value="[[+userGuestsPostcode]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userGuestsTel">Telephone:
+                    </label>
+                    <input id="userGuestsTel" class="text validcharsgeneral" name="userGuestsTel" type="text" value="[[+userGuestsTel]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userGuestsGuestOf">Guest Of:
+                    </label>
+                    <input id="userGuestsGuestOf" class="text validcharsgeneral" name="userGuestsGuestOf" type="text" value="[[+userGuestsGuestOf]]"/>
+                     <div id="formvalidationerror" ></div>
+                </li>
+                <li><label for="userGuestsActive">Active:
+                    </label>
+                    <input id="userGuestsActive" class="checkbox" name="userGuestsActive" type="checkbox" value="1" [[+userGuestsActive]]/>
+                </li>
+
+            </ol>
+
+        </fieldset>
+
+
+        <fieldset class="submit">
+            <input class="submit-buy" type="submit" value="Save" name="userGuestsAddEditSubmit"/>
+        </fieldset>
+        </aside>
+
+</form>
+
+<div class="servererror"><strong>[[+userGuestError]]</strong></div>

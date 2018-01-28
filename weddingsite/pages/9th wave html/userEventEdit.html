@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="styles/main.css" rel="stylesheet" type="text/css" media="screen"/>
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="styles/ie.css"/>
+<![endif]-->
+
+<!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="styles/jquery-ui-1.8.11.custom.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+</head>
+
+<body>
+
+
+        <header>
+            <div class="wrapper">
+                <h1 class="logo"><a href="index.html">Weddings</a></h1>
+                <div class="header-right">
+                  <ul>
+                    <li><a href="#">Back to main site</a>|</li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+                 <!-- main menu -->
+                    <nav>
+                   <ul class="sf-menu">
+                        <li class="first"><a href="userHome.html" title="Free Trial">Admin Home</a></li>
+                     <li class="active"><a href="http://www.weddingwebsitesuk.co.uk/" title="Home">Settings</a></li>
+                    
+                    <li><a href="userEditPage.html" title="Free Trial">Edit Pages</a></li>
+                    
+                    <li><a href="index.php?id=3" title="Features">Guest and Event Planner</a></li>
+                    
+                    <li class="last"><a href="index.php?id=5" title="Designs">Help</a></li>
+                    
+                      </ul>
+                      </nav>
+      <!-- /main menu -->
+
+            </div><!--.wrapper-->
+        </header>
+        
+        
+        
+        
+        <section class="page-title">
+            <div class="wrapper">
+              <h2>Admin Home</h2>
+              <div class="btn-preview"><a class="white-button" href="">Preview website</a></div>
+            </div><!--.wrapper-->
+        </section>
+        
+       
+
+        <section class="content-main">  
+            <div class="wrapper">
+             
+               <div class="home-section">
+                    <div id="tabs">
+                            <ul id="primary">
+                                <li><span>Events</span>
+                                  <ul id="secondary">
+                                      <li class="active"><a href="#">Edit Events</a></li>
+                                  </ul>  
+                                </li>
+                                <li><a href="userGuests.html" title="view guests">Guests</a></span></li>
+                                <li><a href="userinvites.html">Invites</a></li>
+                            </ul>
+                            </div>
+                            
+                             <div id="main-tabs-padding-extra">
+                                <div id="content-tabs">
+                                  <p>Here you can edit the the details for each event. There is also the option to add meal choices for your ceremony, simply add the meal choices and these will show up for any guest invited to that particular event.</p>
+                                 <div class="wrapper-twocol">
+                           
+                                       <aside class="left210">
+                                       <h3>Add/edit options</h3>
+                   <form id="user-editForm" method="post">
+        	         <fieldset>
+                        <legend>The main meal choices are:</legend>
+          
+                        <ol>
+
+                        <li><label for="event-option1">1</label>
+                        <input class="text" name="event-option1" type="text" /></li>
+                           <li><label for="event-option2">2</label>
+                        <input class="text" name="event-option2" type="text" /></li>
+                           <li><label for="event-option3">3</label>
+                        <input class="text" name="event-option3" type="text" /></li>
+                           <li><label for="event-option4">4</label>
+                        <input class="text" name="event-option4" type="text" /></li>
+                           <li><label for="event-option5">5</label>
+                        <input class="text" name="event-option5" type="text" /></li>
+                           <li><label for="event-option6">6</label>
+                        <input class="text" name="event-option6" type="text" /></li>
+                           <li><label for="event-option7">7</label>
+                        <input class="text" name="event-option7" type="text" /></li>
+                          <li><label for="event-option8">8</label>
+                        <input class="text" name="event-option8" type="text" /></li>
+                          <li><label for="event-option9">9</label>
+                        <input class="text" name="event-option9" type="text" /></li>
+                          <li><label for="event-option10">10</label>
+                        <input class="text" name="event-option10" type="text" /></li>
+                        </ol>
+                        </fieldset>
+              </form>
+                                         
+                                       </aside>
+                                       
+                                       <article class="main-article">
+                                       <h3>Event 3: <span class="grey">Add/Edit event details</span></h3>
+                                           <form id="contactForm" method="post">
+        	<fieldset>
+          
+                        <ol>
+
+                   <li>
+                        <label for="event1Title">Event title: </label>
+                        <input class="text" name="text" type="text" />
+                        </li>
+                  <li><label for="datepicker">Date:</label>
+                          <input id="datepicker" class="text" name="text" type="text" />
+                        </li>
+<li>
+  <label for="location">Location address:</label><input class="text" name="text" type="text" /></li>
+<li>
+  <label for="startTime">Start time:</label><input id="timepicker" class="text" name="text" type="text" /></li>
+<li><label for="endTime">End time:</label><input id="timepicker-2" class="text" name="text" type="text" /></li> 
+<li><label for="maxGuests">Max guests:</label><input class="text" name="text" type="text" /></li>
+<li><label for="totalGuestse">Total guests:</label><input class="text" name="text" type="text" /></li>
+</ol>
+                       </fieldset>
+                  <fieldset class="submit">
+                        <input class="submit-buy" type="submit" value="Save" />
+                 </fieldset>
+                 
+        </form>
+                                       </article>
+                                       <div class="clearer"></div>
+                                </div><!--.wrapper-->
+                             
+            
+               </div>
+               </div>
+                            
+                 
+               </div><!-- / home section -->
+               </div><!--.wrapper-->
+               
+             
+               
+                    
+                     
+            
+        </section>
+
+                  
+                  
+                  
+       	<section class="content-lower">
+		 <div class="wrapper">
+	
+<!--Twitter Widget-->
+
+			<div class="column">
+			 <h4>Navigate</h4>
+                <ul class="txtlist">
+     <li class="first"><a href="http://www.weddingwebsitesuk.co.uk/" title="Home" >Home</a></li>
+<li class="active"><a href="index.php?id=4" title="Demo">Demo</a></li>
+<li><a href="index.php?id=3" title="Features">Features</a></li>
+<li><a href="index.php?id=5" title="Designs">Designs</a></li>
+<li><a href="index.php?id=7" title="FAQS" >FAQS</a></li>
+<li><a href="index.php?id=6" title="Blog">Blog</a></li>
+
+<li class="last"><a href="index.php?id=8" title="Contact">Contact</a></li>
+
+   </ul>
+
+			</div>
+            
+            <div class="column">
+               <h4>Recent News</h4>
+
+            </div>
+            
+			
+<!--Newsletter Widget-->
+
+			<div class="column">
+				            <h4>Newsletter</h4>
+          
+            <form method="post">
+              <fieldset class="login">
+              <legend>Sign up to the newsletter</legend>
+                <input type="text" value="First Name" name="FNAME" id="mce-FNAME" class="fname" />
+                <input type="text" value="Last Name" name="LNAME" id="mce-LNAME" class="lname" />
+                <input type="text" value="Email Address" name="EMAIL" class="required email" id="mce-EMAIL" />
+                <button type="submit" name="subscribe" >SUBSCRIBE</button><br/>
+    <a href="#">CHECK OUT THE ARCHIVE</a>
+    </fieldset>
+  </form>
+          
+
+			</div>
+			
+
+			
+			<div class="column">
+			   <h4>Connect with us</h4>
+                <ul class="social-nav">
+                  <li><a href="#" class="twit"><span>Twitter</span></a></li>
+                  <li><a href="#" class="face"><span>Facebook</span></a></li>
+                  <li><a href="#" class="rss"><span>rss</span></a></li>
+    
+                </ul>
+			</div>
+		
+
+			
+		</div><!--.wrapper-->
+    
+        
+	</section><!--End Footer-->
+        <footer>
+         <div class="wrapper">
+         		<p>Copyright 2011 © <strong>Brand Name</strong>. All Rights Reserved.</p>
+
+            </div><!--.wrapper-->
+        </footer>
+        <script src='js/superfish/superfish.js?v=1'></script>
+       <script src='js/prosto.js'></script>    
+       <script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+       <script type="text/javascript" src="js/jquery.ui.timepicker.js"></script>
+ <script>
+	$(function() {
+		$( "#datepicker" ).datepicker({
+			showOn: "both",
+			buttonImage: "images/calendar.gif",
+			buttonImageOnly: true,
+			minDate: -2, maxDate: "+48M +28D",
+			changeYear: true,
+			changeMonth: true
+		});
+	});
+</script>
+<script>	
+ $(function() {
+	 $('#timepicker').timepicker();
+	 $('#timepicker-2').timepicker();
+   }); 
+</script>          
+
+</body>
+</html>

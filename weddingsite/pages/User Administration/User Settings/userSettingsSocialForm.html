@@ -1,0 +1,42 @@
+<p><strong>Do you want to share your social network accounts with your website visitors?<br />
+If so simply add your account settings below and the links will appear on your website.</strong></p>
+<br />
+
+<form id="socialForm" method="post" action="/[[~[[*id]]]]">
+    <input type="hidden" name="userSettingsSocialSubmit" value="true"/>
+    <fieldset>
+        <ol>
+          <li><label for="userSettingsSocialFacebook">Facebook Username:
+            
+            </label><br />
+                http://www.facebook.com/<input id="userSettingsSocialFacebook" class="text tobackend validcharsURL" name="userSettingsSocialFacebook" type="text" value="[[+userSettingsSocialFacebook]]"/><br />
+            </li>
+            <li><label for="userSettingsSocialTwitter">Twitter Username:
+                </label><br />
+              http://www.twitter.com/<input id="userSettingsSocialTwitter" class="text tobackend validcharsURL" name="userSettingsSocialTwitter" type="text" value="[[+userSettingsSocialTwitter]]"/><br />
+          
+            </li>
+            <li><label for="userSettingsSocialGoogle">Google Username:
+                </label><br />
+              https://plus.google.com/<input id="userSettingsSocialGoogle" class="text tobackend validcharsURL" name="userSettingsSocialGoogle" type="text" value="[[+userSettingsSocialGoogle]]"/>
+            </li>
+           <!-- <li><label for="userSettingsSocialOther1">Other HTTP:
+                </label>
+                <textarea id="userSettingsSocialOther1" class="text tobackend validcharsURL" name="userSettingsSocialOther1" rows="3">
+                   [[+userSettingsSocialOther1]]
+                </textarea>
+            </li>
+            <li><label for="userSettingsSocialOther2">Other HTTPS:
+                </label>
+                <textarea id="userSettingsSocialOther2" class="text tobackend validcharsURL" name="userSettingsSocialOther2" rows="3">
+                   [[+userSettingsSocialOther2]]
+                </textarea>
+            </li>-->
+    </fieldset>
+
+
+    <fieldset class="submit">
+        <input class="button" type="submit" value="Save social settings" name="userSettingsSocialSubmit" id="userSettingsSocialSubmit"/>
+    </fieldset>
+
+</form>

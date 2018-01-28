@@ -1,0 +1,32 @@
+<span class="quip-success" id="quip-success-[[+idprefix]]">[[+successMsg]]</span>
+ 
+<form id="quip-add-comment-[[+idprefix]]" action="[[+url]]#quip-comment-preview-box-[[+idprefix]]" method="post">
+<div class="quip-comment quip-add-comment">
+    <input type="hidden" id="userGuestbookFEnospam" name="userGuestbookFEnospam" value="0" />
+    <input type="hidden" name="nospam" value="[[+nospam]]" />
+    <input type="hidden" name="thread" value="[[+thread]]" />
+    <input type="hidden" name="parent" value="[[+parent]]" />
+    <input type="hidden" name="auth_nonce" value="[[+auth_nonce]]" />
+    <input type="hidden" name="preview_mode" value="[[+preview_mode]]" />
+ 
+     <div class="quip-fld">
+        <label for="quip-comment-name-[[+idprefix]]">[[%quip.name? &namespace=`quip` &topic=`default`]]:<span class="quip-error">[[+error.name]]</span></label>
+        <input type="text" name="name" id="quip-comment-name-[[+idprefix]]"/>
+        <br />
+    </div>
+     
+    <div class="quip-fld">
+        <label for="quip-comment-email-[[+idprefix]]">[[%quip.email]]:<span class="quip-error">[[+error.email]]</span></label>
+        <input type="text" name="email" id="quip-comment-email-[[+idprefix]]" />
+        <br />
+    </div>
+     
+    <p><span class="quip-error">[[+error.comment]]</span></p>
+    <textarea name="comment" id="quip-comment-box-[[+idprefix]]" rows="5">[[+comment]]</textarea>
+     
+ 
+    <button type="submit" id ="userGuestbookFEFormSubmit" name="quip-post" value="1">Sign</button>
+     
+    <br class="clear" />
+</div>
+</form>

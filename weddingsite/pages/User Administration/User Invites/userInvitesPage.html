@@ -1,0 +1,53 @@
+<section class="content-main">
+<div class="wrapper">
+
+<div class="home-section">
+<div id="tabs">
+<ul id="primary">
+  <li><a href="[[+eventPageLink]]">Events</a></li>
+  <li><a href="[[+guestPageLink]]">Guests</a></li>
+  <li class="active"><span>Invites</span></li>
+</ul>
+</div>
+<script>
+  $(function() {
+    $("#main-tabs").tabs();
+  });
+</script>
+<div id="main-tabs">
+<div id="content-tabs">
+<ul id="primary">
+  <li><a class="invites-Tabs1" href="#invitesTabs-1"><strong>1.</strong> Select
+  Event</a></li>
+  <li><a class="invites-Tabs2" href="#invitesTabs-2"><strong>2.</strong> Manage
+  Guests</a></li>
+  <li><a class="invites-Tabs3" href="#invitesTabs-3"><strong>3.</strong> Send
+  Invites</a></li>
+</ul>
+
+<div id="invitesTabs-1">
+[[!$userInvitesEventForm]]
+</div>
+<div id="invitesTabs-2">
+<p>Click in the entries in the table below to make changes.</p>
+<br />
+[[!$userInvitesGuestsPage]]</div>
+<div id="invitesTabs-3">
+<p>Please select your theme before sending your invites.</p>
+<br />
+<div class="user-invites-left">
+[[!$userInvitesGallery]]
+</div>
+<div class="user-invites-right" >
+[[!$userInvitesSendButton]]
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+</section>

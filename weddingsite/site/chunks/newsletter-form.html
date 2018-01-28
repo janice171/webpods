@@ -1,0 +1,9 @@
+<div id="newsletter-wrapper">
+    [[!FormIt? &hooks=`spam,ditsnewssignup,redirect` &redirectTo=`1468` 
+    &validate=`email:required:email` &submitVar=`newsform`]]
+    <form id="ditsnews" name="ditsnews" action="/[[~[[*id]]]]" method="post">
+        <input type="hidden" name="newsform" value="1" />
+        <input class="newsletter-box" name="email" type="text" value="[[+fi.email]]" [[!+fi.error.email:notempty=`class="error"`]] />  
+        <input class="newsletter-submit" type="submit" value="" />
+    </form>
+</div>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model package="ws_userextensions" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM">
+	
+	<!-- inherit the modx user and extend it -->
+    <object class="weddingUser" table="users" extends="modUser">
+        <composite alias="Attributes"  class="weddingUserAttribute" local="id" foreign="user" cardinality="one" owner="local" />
+        <composite alias="Guests" class="weddingUserGuest" local="id" foreign="user" cardinality="many" owner="local" />
+        <composite alias="Events" class="weddingUserEvent" local="id" foreign="user" cardinality="many" owner="local" />
+        <composite alias="Pages" class="weddingUserPage" local="id" foreign="user" cardinality="many" owner="local" />
+        <composite alias="GalleryAlbum" class="weddingUserGalleryAlbum" local="id" foreign="user" cardinality="many" owner="local" />
+        <composite alias="GalleryItem" class="weddingUserGalleryItem" local="id" foreign="user" cardinality="many" owner="local" />
+        <composite alias="GalleryTags" class="weddingUserGalleryTags" local="id" foreign="user" cardinality="many" owner="local" />
+    </object>
+    
+    <!-- Wedding user attributes-->
+    <object  class="weddingUserAttribute"  table="ws_userattribute" extends="xPDOSimpleObject">
+        <field key="user" dbtype="int" phptype="integer" null="false" default="0" index="unique" />
+        <field key="firstName" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="lastName" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="partnerName1" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="partnerName2" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="date" dbtype="int" precision="11" phptype="integer" null="false" />
+        <field key="website" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="theme" dbtype="varchar" precision="255" phptype="string" null="false" default="" /> 
+        <field key="hearAbout" dbtype="varchar" precision="255" phptype="string" null="false" default="" /> 
+        <field key="packageType" dbtype="varchar" precision="255" phptype="string" null="false" default="" /> 
+        <field key="passwordProtect" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned"  null="false" default="0" /> 
+        <field key="websitePassword" dbtype="varchar" precision="100" phptype="string" null="false" default="" />
+        <field key="websiteDetails" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned"  null="false" default="0" /> 
+        <field key="personalDetails" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned"  null="false" default="0" /> 
+        <field key="websiteActive" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+        <field key="moderateGuestbook" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+        <field key="websiteSearchable" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+        <field key="socialGoogle" dbtype="mediumtext" phptype="string"  default="" />
+        <field key="socialFacebook" dbtype="mediumtext" phptype="string"  default="" />
+        <field key="socialTwitter" dbtype="mediumtext" phptype="string"  default="" />
+        <field key="socialOther1" dbtype="mediumtext" phptype="string"  default=""/>
+        <field key="socialOther2" dbtype="mediumtext" phptype="string"  default="" />
+        <field key="registrationDate" dbtype="int" precision="11" phptype="integer" null="false" />
+        <field key="displayCountdown" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+        <field key="domain" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="expiryCount" dbtype="int" precision="11" phptype="integer" null="true"  default="0"/>
+        <aggregate alias="weddingUser" class="weddingUser" local="user" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+    
+    <!--  Guests-->
+    <object class="weddingUserGuest" table="ws_userguest" extends="xPDOSimpleObject">
+        <field key="user" dbtype="int" phptype="integer" null="false" default="0" index="fk"/>
+        <field key="name" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="email" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="address1" dbtype="varchar" precision="128" phptype="string"  default="" />
+        <field key="address2" dbtype="varchar" precision="128" phptype="string"  default="" />
+        <field key="city" dbtype="varchar" precision="128" phptype="string" default="" />
+        <field key="postCode" dbtype="varchar" precision="128" phptype="string" default="" />
+        <field key="telephone" dbtype="varchar" precision="128" phptype="string" default="" />
+        <field key="guestOf" dbtype="varchar" precision="128" phptype="string" default="" />
+        <field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="1" />
+        <field key="notes" dbtype="mediumtext" phptype="string"  default="" />
+        <field key="party" dbtype="int"  phptype="integer" default="1" />
+        <aggregate alias="weddingUser" class="weddingUser" local="user" foreign="id" cardinality="one" owner="foreign" />
+        <composite alias="guestEvents" class="guestEvents" local="id" foreign="guestId" cardinality="many" owner="local" />
+    </object>
+    
+    <!--  Events-->
+    <object class="weddingUserEvent" table="ws_userevent" extends="xPDOSimpleObject">
+        <field key="user" dbtype="int" phptype="integer" null="false" default="0" index="fk" />
+        <field key="name" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="date" dbtype="int" precision="11" phptype="integer" null="false" />
+        <field key="location" dbtype="varchar" precision="512" phptype="string" null="false" default="" /> 
+        <field key="address2" dbtype="varchar" precision="128" phptype="string"  default="" />
+        <field key="address3" dbtype="varchar" precision="128" phptype="string"  default="" />
+        <field key="address4" dbtype="varchar" precision="128" phptype="string"  default="" />
+        <field key="startTime" dbtype="varchar" precision="16" phptype="string" null="false" default="" /> 
+        <field key="endTime" dbtype="varchar" precision="16" phptype="string" default="" /> 
+        <field key="totalGuests" dbtype="int" phptype="integer" default="0" />
+        <field key="maxGuests" dbtype="int" phptype="integer" default="0" />
+        <field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" />
+        <field key="notes" dbtype="mediumtext" phptype="string"  default="" />
+        <aggregate alias="weddingUser" class="weddingUser" local="user" foreign="id" cardinality="one" owner="foreign" />
+        <composite alias="guestEvents" class="guestEvents" local="id" foreign="eventId" cardinality="many" owner="local" />
+    </object>
+    
+    <!--  Pages-->
+    <object class="weddingUserPage" table="ws_userpage" extends="xPDOSimpleObject">
+        <field key="user" dbtype="int" phptype="integer" null="false" default="0" index="fk" />
+        <field key="pageId" dbtype="int" precision="11" phptype="integer" null="false" />
+        <field key="editType" dbtype="varchar" precision="128" phptype="string" null="false" default=""/>
+        <field key="passwordProtect" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" /> 
+        <aggregate alias="weddingUser" class="weddingUser" local="user" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+    
+    <!-- Guest/Event mapping table-->
+    <object class="guestEvents" table="ws_guestevent" extends="xPDOSimpleObject">
+        <field key="guestId" dbtype="int" precision="11" phptype="integer" null="false" />
+        <field key="eventId" dbtype="int" precision="11" phptype="integer" null="false" />
+        <field key="willAttend" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" />
+        <field key="reminderCount" dbtype="int" precision="11" phptype="integer" null="false" default="0"/>
+        <field key="InviteSent" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" /> 
+        <field key="RSVPDate" dbtype="int" precision="11" phptype="integer" default="0"/>
+        <field key="lastReminderDate" dbtype="int" precision="11" phptype="integer" default="0"/>
+        <field key="RSVPdOnline" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" />
+        <field key="RSVPdManual" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" />
+        <aggregate alias="weddingUserEvent" class="weddingUserEvent" local="eventId" foreign="id" cardinality="one" owner="foreign" />
+        <aggregate alias="weddingUserGuest" class="weddingUserGuest" local="guestId" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+
+    <!--  Gallery Album -->
+    <object class="weddingUserGalleryAlbum" table="ws_usergalleryalbum" extends="xPDOSimpleObject">
+        <field key="user" dbtype="int" phptype="integer" null="false" default="0" index="fk" />
+        <field key="albumName" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="albumDescription" dbtype="varchar" precision="512" phptype="string" null="true" default="" />
+        <field key="albumPosition" dbtype="int" precision="11" phptype="integer" null="false" default="1"/>
+        <field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" />
+        <aggregate alias="weddingUser" class="weddingUser" local="user" foreign="id" cardinality="one" owner="foreign" />
+        <composite alias="albumItems" class="albumItems" local="id" foreign="albumId" cardinality="many" owner="local" />
+    </object>
+     
+     <!-- Gallery Item -->
+    <object class="weddingUserGalleryItem" table="ws_usergalleryitem" extends="xPDOSimpleObject">
+        <field key="user" dbtype="int" phptype="integer" null="false" default="0" index="fk" />
+        <field key="itemFileName" dbtype="varchar" precision="512" phptype="string" null="false" default="" /> 
+        <field key="itemDisplayName" dbtype="varchar" precision="128" phptype="string" null="true" default="" />
+        <field key="itemDescription" dbtype="varchar" precision="512" phptype="string" null="true" default="" />
+        <field key="itemPosition" dbtype="int" precision="11" phptype="integer" null="false" default="1"/>
+        <field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" />
+        <field key="useForAlbum" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" default="0" />
+        <aggregate alias="weddingUser" class="weddingUser" local="user" foreign="id" cardinality="one" owner="foreign" />
+        <composite alias="albumItems" class="albumItems" local="id" foreign="itemId" cardinality="many" owner="local" />
+        <composite alias="galleryItemTags" class="galleryItemTags" local="id" foreign="galleryId" cardinality="many" owner="local" />
+    </object>
+    
+    <!-- Gallery Album/Item mapping table-->
+    <object class="albumItems" table="ws_albumitem" extends="xPDOSimpleObject">
+        <field key="albumId" dbtype="int" precision="11" phptype="integer" null="false" />
+        <field key="itemId" dbtype="int" precision="11" phptype="integer" null="false" />
+        <aggregate alias="weddingUserGalleryAlbum" class="weddingUserGalleryAlbum" local="albumId" foreign="id" cardinality="one" owner="foreign" />
+        <aggregate alias="weddingUserGalleryItem" class="weddingUserGalleryItem" local="itemId" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+    
+    <!--  Tags -->
+    <object class="weddingUserGalleryTags" table="ws_usergallerytags" extends="xPDOSimpleObject">
+        <field key="user" dbtype="int" phptype="integer" null="false" default="0" index="fk" />
+        <field key="tagName" dbtype="varchar" precision="128" phptype="string" null="false" default="" />
+        <field key="tagDescription" dbtype="varchar" precision="512" phptype="string" null="true" default="" />
+        <aggregate alias="weddingUser" class="weddingUser" local="user" foreign="id" cardinality="one" owner="foreign" />
+        <composite alias="galleryItemTags" class="galleryItemTags" local="id" foreign="tagId" cardinality="many" owner="local" />
+    </object>
+    
+    <!-- Gallery/Tag mapping table-->
+    <object class="galleryItemTags" table="ws_galleryitemtag" extends="xPDOSimpleObject">
+        <field key="galleryId" dbtype="int" precision="11" phptype="integer" null="false" />
+        <field key="tagId" dbtype="int" precision="11" phptype="integer" null="false" />
+        <aggregate alias="weddingUserGallery" class="weddingUserGallery" local="galleryId" foreign="id" cardinality="one" owner="foreign" />
+        <aggregate alias="weddingUserTags" class="weddingUserTags" local="tagId" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+    
+</model>
+    
+    

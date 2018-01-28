@@ -1,0 +1,17 @@
+/* jQuery slideLock CSS */
+
+p.quiet { padding: 0 0 24px 288px; width: 264px; }
+span.quiet { font-size: .875em; }
+#locked, #unlocked, p.quiet img { display: block; float: left; }
+#locked { font-weight: bold; color: #333; width: 124px; }
+#unlocked { width: 124px; text-align: right; }
+p.quiet img { margin: 0; }
+
+/* Slider ----------------------------------*/
+.ui-slider { margin: 10px 0 10px 288px; width: 264px; }
+.ui-slider-handle { }
+.ui-slider-handle:hover { cursor: e-resize; }
+.ui-slider-horizontal { }
+.ui-slider-handle:hover, .ui-state-hover, .ui-state-focus, .ui-state-active { }
+a.ui-state-hover, a.ui-state-focus { }
+a.ui-state-active { }

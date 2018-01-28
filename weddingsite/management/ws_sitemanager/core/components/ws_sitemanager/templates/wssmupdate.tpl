@@ -1,0 +1,1 @@
+<div id="wssm-panel-user-div"></div>

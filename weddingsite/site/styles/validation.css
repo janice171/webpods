@@ -1,0 +1,29 @@
+#registrationForm li {
+	position: relative;
+	}
+
+#registrationForm strong.error{
+	background: white url("../images/icon-cross.png") no-repeat right top;
+	font-weight: bold;
+	color: #C00;
+	position: absolute;
+	top: 12px;
+	right: 0;
+	width: 200px;
+	padding-right: 20px;
+	font-size: 85%;
+	} 
+
+div.servererror {
+  padding-left: 2px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  color: #C00;
+}
+
+label.error {
+  padding-left: 2px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  color: #C00;
+}

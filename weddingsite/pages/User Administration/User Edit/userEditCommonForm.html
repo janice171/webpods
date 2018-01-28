@@ -1,0 +1,28 @@
+<form id="userEditCommonForm" method="post" [[+userEditGenericSubmit]] action="/[[~[[*id]]]]/?userPage=[[+userPageId]]">
+    <fieldset>
+        <input id="userCommonUserPageId" name="userCommonUserPageId" type ="hidden" value="[[+userPageId]]"/>
+        <ol>
+            <li><label class="user-edit-label">Page name:</label>
+                <input class="text" name="userCommonPageTitle" id="userCommonPageTitle" type="text" value="[[+userEditCommonPageTitle]]"/></li>
+
+
+            <li><span class="user-edit-label">Webpage active:<a href="#" title="#" class="information"><span>Information</span></a></span>
+                <input id="userCommonPageActiveYes" class="radio-btn" name="userCommonPageActive" type="radio" value="1" [[+userEditCommonYesSelected]]/><label class="radio-label">Yes</label>
+
+                <input id="userCommonPageActiveNo" class="radio-btn" name="userCommonPageActive" type="radio" value="0" [[+userEditCommonNoSelected]]/><label class="radio-label">No</label>
+            </li>
+            <li><span class="user-edit-label">Password protect:<a href="#" title="#" class="information"><span>Information</span></a></span>
+                <input id="userCommonPageProtectYes" class="radio-btn" name="userCommonPageProtect" type="radio" value="1" [[+userEditCommonProtectYesSelected]]/><label class="radio-label">Yes</label>
+
+                <input id="userCommonPageProtectNo" class="radio-btn" name="userCommonPageProtect" type="radio" value="0" [[+userEditCommonProtectNoSelected]]/><label class="radio-label">No</label>
+            </li>
+        </ol>
+    </fieldset>
+
+</div>
+<div class="user-edit-right">
+    <input class="btn-save-changes" type="submit" name="userEditCommonFormSubmit" value="Save Changes" />
+</div>
+
+</form>
+<div class="servererror"><strong>[[+userEditCommonError]]</strong></div>

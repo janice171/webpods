@@ -1,0 +1,139 @@
+/* CSS reset
+-------------------------------------------------------------------------------------- */
+html, body, div, pre, form, fieldset, input, h1, h2, h3, h4, p, ol, ul, li, dl, dt, dd, blockquote, th, td {padding: 0; margin: 0;}
+/* The above makes sure that all browsers take off any default padding or margins from elements. The below styles also resets the defaults for elements so there is consistency across browsers*/
+table { border-collapse:collapse; border-spacing:0; }
+fieldset, img { border:0; }
+ul, li{ list-style:none;margin: 0; padding: 0;}
+caption, th { text-align:left; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:bold; }
+a:active {outline: none;}
+a:focus {outline: none; }
+/* Tell old browsers how to handle HTML5 elements */
+header, footer, aside, nav, article {display: block;}
+
+/* General
+-------------------------------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+.clear:after {
+    clear: both; 
+    content: "."; 
+    display: block; 
+    height: 0; 
+    visibility: hidden;
+}
+.clear { display: inline-block; }
+/* Hides from IE-mac \*/
+* html .clear { height: 1%; }
+.clear { display: block; }
+/* End hide from IE-mac */
+h1, h2, h3, h4, p, ol, ul, li {padding: 0; margin: 0;}
+body {
+	color: #666;
+	font-size:80%;
+	line-height: 170%;
+	background:url(classic/green/images/bg-slice-squares.gif) repeat;
+}
+html {overflow-y:scroll;}
+/* General Typography and Headings
+-------------------------------------------------------------------------------------- */
+p {margin-bottom: 11px;font-family:Arial, Helvetica, sans-serif ;}
+h1 {font-size: 190%;;}
+h2{font-size: 150%;}
+h3{font-size: 120%;}
+h4{font-size: 110%;}
+h1, h2, h3, h4{ color: #94a97a; margin: 0 0 4px 0; font-family:Georgia, "Times New Roman", Times, serif;}
+h1 {margin-bottom: 30px;}
+a img {border: none; }
+a  {color: #698e39;text-decoration:none;}
+a:hover {color: #666;}
+span.colour {color: #c3c3c2;}
+
+.justifyleft {margin: 5px 10px 5px 0; float:left;}
+.justifyright {margin: 5px 0 5px 10px; float:right;}
+
+.home-pic-bg {background: url(classic/green/images/bg-home-pic.png) no-repeat; width: 252px; height: 204px;margin: 0 20px 0 0; float: left; padding: 13px 16px;}
+.home-pic-bg img {width: 251px; height: 187px;}
+
+#content img {border: #fff solid 7px;margin: 10px;
+	box-shadow: 0 0 6px 1px #ccc;
+-webkit-box-shadow:  0 0 6px 1px #ccc;
+-moz-box-shadow:  0 0 6px 1px #ccc0;}
+
+.countdown {background: url(classic/green/images/bg-countdown.png) no-repeat; height: 80px; width:186px; text-align: center; padding: 20px 0;}
+
+.divider {background: url(classic/divider-classic.png) no-repeat; display: block; height: 40px;margin: 5px auto;
+ width: 592px;}
+/* SOCIAL ICONS
+-------------------------------------------------------------------------------------- */
+ul.social-nav {width: 200px; height: 39px; margin-bottom: 10px;}
+ul.social-nav li {float: left;}
+ul.social-nav li a {
+display:block;
+height:39px;
+margin:0 0 0 12px;
+text-indent:-9999px;
+width:44px;
+}
+ul.social-nav li a.twit {background: url(classic/green/images/twitter.png) no-repeat 0px 0px;}
+ul.social-nav li a.face {background: url(classic/green/images/face.png) no-repeat 0px 0px;}
+ul.social-nav li a.rss {background: url(classic/green/images/rss.png) no-repeat 0px 0px;}
+ul.social-nav li a.twit:hover, ul.social-nav li a.face:hover, ul.social-nav li a.rss:hover
+{background-position: 0px -39px;}
+
+/* Structure
+-------------------------------------------------------------------------------------- */
+.wrapper {margin: 0 auto; width: 920px;position:relative;}
+#container {background:url(classic/green/images/bg-slice-content.gif) repeat-x;overflow: hidden;}
+#content {width: 708px; float:right;background: url(classic/green/images/bg-content-footer.png) no-repeat left bottom;padding-bottom: 89px;}
+#content .inner {padding: 0 50px 10px;background: url(classic/green/images/bg-content-slice.gif) repeat-y; width: 608px;overflow: hidden;}
+#sidebar {width: 200px; float:left;}
+
+/* Header
+-------------------------------------------------------------------------------------- */
+#header {
+	height: 200px;
+	background:url(classic/green/images/bg-slice.gif) repeat-x;
+}
+#header .header-content {
+	float: right;
+	height: 181px;
+	width: 708px;
+	background: url(classic/green/images/bg-header.png) no-repeat;
+	margin: 19px 0 0 0;
+}
+#header h1 {
+	text-align: center;font-size: 340%;
+    line-height: 50px;
+    margin: 40px auto 0; width: 600px;
+	color: #94a97a; text-shadow: -1px -1px 0 #56673F, 1px 2px 1px #fff;
+}
+#header h3 {background:url(classic/green/images/bg-header-date.png) no-repeat;text-align: center; width: 230px; height: 46px;margin: 0 auto;line-height: 37px;color: #4b5242; font-weight: normal;text-shadow: 1px 1px 0 #FFFFFF;} 
+/* Navigation
+-------------------------------------------------------------------------------------- */
+ul#nav { margin-bottom: 10px;} /* (TS) */
+ul#nav li {height: 22px;}
+ul#nav li a {
+color:#666;
+text-decoration:none;
+display: block;
+padding: 0 0 0 15px; text-transform: uppercase; line-height:22px; height: 22px;
+}
+ul#nav a:hover{color: #698e39;background: url(classic/green/images/bullet-grey.png) no-repeat left center; } /* (TS) */
+ul#nav li.active a {color: #698e39;background: url(classic/green/images/bullet.png) no-repeat left center; } /* (TS) */
+/* Footer
+-------------------------------------------------------------------------------------- */
+#footer {background: url(classic/green/images/bg-slice-footer.gif) repeat-x left top #eff8e6; padding: 70px 0 0 0; min-height: 90px;}
+.footer-right {float: right; width: 500px;text-align: right;}
+#footer p {margin: 0;}
+
+.divider {margin-bottom: 20px;}
+.userGalleryAlbums {height: 20px;}
+.userGalleryAlbums li {float: left; margin: 0 10px 0 0;}
+.userGalleryAlbums li a {background: url("classic/bullet-grey.png") no-repeat 0px 1px; padding: 0 0 0 13px;}
+
+#content .es-carousel ul li a img {border: none; box-shadow: none; margin: 0;}
+#content .rg-image img {border: none; margin: 0;}

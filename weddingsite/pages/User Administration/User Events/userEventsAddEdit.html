@@ -1,0 +1,35 @@
+<section class="content-main">  
+    <div class="wrapper">
+
+        <div class="home-section">
+            <div id="tabs">
+                <ul id="primary">
+                   <li class="active"><span>Events</span></li>
+                    <ul id="secondary">
+                        <li ><a href="[[+eventPageLink]]">Event List</a></li>                                      
+                        <li class="active"><a href="[[+eventAddEditPageLink]]">Add/Edit Event</a></li>
+                    </ul>
+                    <li><a href="[[+guestPageLink]]">Guests</a></li>
+                    <li><a href="[[+invitePageLink]]">Invites</a></li>
+                </ul>
+            </div>
+
+            <div id="main-tabs-padding-extra">
+                <div id="content-tabs">
+                    <div class="wrapper-twocol">
+                        <aside class="left210"><br/>  
+                        </aside>
+                        [[+userEventAddEditHeader]]
+                        <article class="main-article">        
+                            [[$userEventsAddEditForm]]
+                            <div class="servererror"><strong>[[+userSettingError]]</strong></div>
+                        </article>
+                        <div class="clearer"></div>
+                    </div><!--.wrapper-->
+                </div>
+            </div>
+
+        </div><!-- / home section -->
+    </div><!--.wrapper-->
+
+</section>

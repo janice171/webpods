@@ -1,0 +1,19 @@
+<div id="userEditBlogTinyMCE">
+    
+    <form id="userEditBlogForm" method="post" action="/[[~[[*id]]]]?userPage=[[+userPageId]]">
+<fieldset>
+        <ol>
+            <li>
+                <input class="text" type="text"  id="userEditBlogTitle" name="userEditBlogTitle" />
+            </li>
+        </ol>
+</fieldset>
+        <textarea id="userEditBlogTinyMCEcontent" name="userEditBlogTinyMCEcontent" class="tinymce" style="width:100%">
+        [[+userEditBlogContent]]
+        </textarea>
+        <input type="hidden" name="userPage" id="userPage" value="[[+userPageId]]"/>
+        <input type="hidden" name="userBlogPage" id="userBlogPage" value="[[+userBlogPageId]]"/>
+ </form>
+    
+</div>
+

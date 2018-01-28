@@ -1,0 +1,15 @@
+# Default modx exclusions
+User-agent: *
+Disallow: /
+Disallow: /assets/cache/
+Disallow: /assets/docs/
+Disallow: /assets/export/
+Disallow: /assets/import/
+Disallow: /assets/modules/
+Disallow: /assets/plugins/
+Disallow: /assets/snippets/
+Disallow: /install/
+Disallow: /manager/
+Disallow: /suspended.page/
+Disallow: /moving.page/
+Disallow: /jquery-ui-1.8.11.custom/

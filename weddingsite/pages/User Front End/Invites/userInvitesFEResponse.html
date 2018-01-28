@@ -1,0 +1,36 @@
+<p>Hello [[+guestName]], thank you for responding to the invite for the [[+name]] at [[+partner1]] and [[+partner2]]' s wedding.</p>
+<p>Please check the event details below and indicate if you wish to accept or decline this invitation.</p>
+<p>You may also send [[+userName]] a message in the text box below.</p>
+<p>The event details are as follows :-</p>
+<p>Name : [[+name]]</p>
+<p>Date : [[+date]]</p>
+<p>Location : [[+location]]</p>
+<p>Start Time : [[+startTime]]</p>
+<p>End Time : [[+endTime]]</p>
+   
+<form id="userInvitesFEResponseForm" method="post" action="[[+formLink]]">
+    <fieldset>
+        <input type="hidden" id="userInvitesFEResponseEventId" name="userInvitesFEResponseEventId" value="[[+userInvitesFEResponseEventId]]">
+        <input type="hidden" id="userInvitesFEResponseGuestId" name="userInvitesFEResponseGuestId" value="[[+userInvitesFEResponseGuestId]]">      
+        <ol>
+            <li> 
+                <label for="userInvitesFEResponseAcceptance">I accept the invite</label>
+                <input id="userInvitesFEResponseAcceptance" class="checkbox" name="userInvitesFEResponseAcceptance" type="checkbox" value="1" />
+
+            </li>
+            <li><label for="userInvitesFEResponseMessage">Your Message:
+                </label>
+            <li>             
+                <textarea rows="10" cols="40" id="userInvitesFEResponseMessage" name="userInvitesFEResponseMessage"></textarea>
+            </li>
+   </ol>
+
+    </fieldset>
+    <fieldset class="submit">
+        <input type="submit" name="userInvitesFEResponseFormSubmit" id="userInvitesFEResponseFormSubmit" value="RSVP" class="submit-buy">
+    </fieldset>
+    
+</form>
+<br/>
+<p>Thank you from [[+partner1]] and [[+partner2]].</p>
+<div class="servererror">[[+userInvitesFEResponseError]]</div>

@@ -1,0 +1,83 @@
+/* Slider bits
+-------------------------------------------------------------------------------------*/
+.bx-wrapper {padding: 68px 0 0 1px;}
+ul#slider {
+  position:relative;
+  width:610px;
+  height:233px;
+  margin: 0;
+  padding: 0;
+}
+ul#slider li.slider1 {width: 610px; height: 233px; background:url(../images/slider1.jpg) no-repeat;}
+ul#slider li.slider2 {width: 610px; height: 233px; background:url(../images/slider2.jpg) no-repeat;}
+ul#slider li.slider3 {width: 610px; height: 233px; background:url(../images/slider3.jpg) no-repeat;}
+ul#slider li.slider4 {width: 610px; height: 233px; background:url(../images/slider4.jpg) no-repeat;}
+ul#slider li h2 {color: #3778b9; text-shadow: none; text-transform:uppercase; font-size: 30px;}
+ul#slider li p {color: #666; font-size: 18px;font-weight: normal;line-height: 26px; padding: 0 0 10px 0;}
+ul#slider li .div-container {position: relative;text-align: right; padding-right: 25px;top: 50px; left: 275px; width: 310px;}
+ul#slider li.slider2 .div-container, ul#slider li.slider4 .div-container {top: 30px;}
+ul#slider li.slider1 h2, ul#slider li.slider2 h2, ul#slider li.slider3 h2, ul#slider li.slider4 h2 { padding: 0;}
+
+ul#slider li.slider1 h2, ul#slider li.slider2 h2, ul#slider li.slider4 h2 {font-size: 27px; text-shadow: 1px 1px 1px #fff;}
+
+ul#slider li.slider3 h2 {color: #3f285e;text-shadow: 1px 1px 1px #cebde6;}
+ul#slider li.slider3 p {color: #fff;}
+ul#slider li.slider3 p a {margin-left: 130px;}
+.bx-pager a:hover, bx-pager a.pager-active {background-position:0 -22px;}
+/*pager links*/
+.bx-pager a {
+  margin-right: 3px;
+  zoom:1;
+    height: 22px;
+    width: 22px;
+  background:url(../images/bullets.png) no-repeat;
+  display: block;
+  float: left;
+  text-indent: -9999px;
+}
+/*pager links hover and active states*/
+.bx-pager .pager-active,
+.bx-pager a:hover {
+  background-position: 0 -22px;
+}
+
+/*pager wrapper*/
+.bx-pager {
+  text-align:center;
+  padding-top: 7px;
+  font-size:12px;
+  color:#666;
+  position: absolute;
+  top: 35px;
+  right: 0px;
+}
+
+/*captions*/
+.bx-captions {
+  text-align:center;
+  font-size: 12px;
+  padding: 7px 0;
+  color: #666;
+}
+
+/*auto controls*/
+.bx-auto {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.bx-auto a {
+  color: #666;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+

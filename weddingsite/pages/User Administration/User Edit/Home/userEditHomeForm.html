@@ -1,0 +1,22 @@
+<div class="user-edit-left">
+<form id="userEditHomeForm" method="post" action="/[[~[[*id]]]]">
+    <fieldset>
+        <ol>
+            <li><span class="user-edit-label">Website active:<a href="#" title="#" class="information"><span>Information</span></a></span>
+                <input id="userEditWebsiteYes" class="radio-btn" name="userEditWebsiteProtect" type="radio" value="1" [[+yesSelected]]/><label class="radio-label">Yes</label>
+                <input id="userEditWebsiteNo" class="radio-btn" name="userEditWebsiteProtect" type="radio" value="0" [[+noSelected]] /><label class="radio-label">No</label>
+            </li>
+
+        </ol>
+    </fieldset>
+
+</div>
+<div class="user-edit-right">
+ 
+    <input class="btn-save-changes" type="submit" name="userEditWebsiteProtectSubmit" value="Save Changes" />
+
+</div>
+
+</form>
+    
+<div class="servererror"><strong>[[+userEditHomeError]]</strong></div>

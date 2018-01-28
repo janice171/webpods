@@ -1,0 +1,7 @@
+[02-Aug-2011 05:55:22] PHP Warning:  Unexpected character in input:  ' in /home3/greepitc/public_html/notify/dstyle/professional-resume-template.png on line 131
+[02-Aug-2011 05:55:22] PHP Parse error:  syntax error, unexpected T_STRING in /home3/greepitc/public_html/notify/dstyle/professional-resume-template.png on line 131
+[02-Aug-2011 05:58:26] PHP Parse error:  syntax error, unexpected '*' in /home3/greepitc/public_html/notify/dstyle/interactive-jquery-image-slider.png on line 112
+[02-Aug-2011 06:01:18] PHP Warning:  Unexpected character in input:  '' (ASCII=6) state=1 in /home3/greepitc/public_html/notify/dstyle/how-to-design-accessible-websites.png on line 158
+[02-Aug-2011 06:01:18] PHP Parse error:  syntax error, unexpected T_STRING in /home3/greepitc/public_html/notify/dstyle/how-to-design-accessible-websites.png on line 158
+[02-Aug-2011 06:03:02] PHP Warning:  Unexpected character in input:  '' (ASCII=12) state=1 in /home3/greepitc/public_html/notify/dstyle/tips-to-engage-your-website-visitor.png on line 143
+[02-Aug-2011 06:03:02] PHP Parse error:  syntax error, unexpected T_STRING in /home3/greepitc/public_html/notify/dstyle/tips-to-engage-your-website-visitor.png on line 143

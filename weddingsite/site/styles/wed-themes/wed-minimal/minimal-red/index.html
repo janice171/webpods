@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet/less" href="stylesheets/layout.less">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+<div id="background-top">
+<div class="container">
+			
+	<div class="four columns">
+		   
+		    <div class="navTop"></div>
+		      
+		       <div class="nav-slice navigation">
+		         <nav class="primary">
+					  <ul>
+					     <li class="active"><a href="#" title="#">Link</a></li>
+					     <li><a href="#" title="#">Link</a></li>
+					     <li><a href="#" title="#">Link</a></li>
+					     <li><a href="#" title="#">Link</a></li>
+					     <li><a href="#" title="#">Link</a></li>
+					     <li><a href="#" title="#">Link</a></li>
+					     <li><a href="#" title="#">Link</a></li>
+				     </ul>
+				    </nav> 
+			    </div> 
+			    
+		     <div class="navBottom"></div>
+		        <div class="countdown">
+		             <p>Only <span>100 DAYS</span> to go</p>
+		        </div>
+		          <ul class="social-nav">
+		              <li><a href="" class="face"></a></li>
+		              <li><a href="" class="twit"></a></li>  
+		              <li><a href="" class="rss"></a></li>
+		          </ul>
+
+	</div><!-- four -->
+
+			
+				
+		
+		 <div class="eleven columns offset-by-one add-top">
+		 
+			<div class="one columns">
+				  <div class="date">
+				  <p><span class="day">22</span><br /><span class="month">JUL</span><br /><span class="year">2012</span></p>
+				  </div>
+			 </div>
+			 
+			 <div class="nine columns">
+					 <h1>Someone <span class="small main-colour">&amp;</span> Somebody</h1>
+					 <div class="divider-long"></div>
+			 
+			  </div>
+			  
+			  
+		 <div class="ten columns">
+				  <h2>Welcome to our wedding website!</h2>
+		           <div class="home-pic-bg"><img src="../images/img-home.jpg" alt="wedding picture" class="justifyright"/></div> 
+					<p>Hi everyone.</p>
+					<p>Here's our very own Wedding Website! You will find all the details you need about our wedding day. Come back often as we will keep posting updates, pictures, events, and other content to keep you all in the loop.</p>
+					<p>It is hard to believe we have been in a relationship for almost 7 years. 7 years!! I'm sure this 7th year will be one that keeps us on our toes getting ready for our big day.</p>
+					<p>Don't  forget to RSVP if you still haven't done so. You can also share your thoughts or comments about us in our wedding guestbook.</p>
+					<p>We have added a gift list for anyone who insists on getting us a present and you can find out where to stay if you are travelling the miles to be with us.</p>
+					<p>All this journey has been fun and we thought it will be a good idea to share this with you...</p>
+					<p>We hope you enjoy it as much as we have.</p>
+		     </div>			
+		
+		</div><!-- eleven -->
+		
+
+		
+	<footer class="sixteen columns add-top">
+           
+           <div class="eight columns alpha first-credit">
+		     <p><img src="../images/webpods-logo.png" alt="webpods websites"/><a href="http://www.webpods.co.uk" title="webpods websites"> Copyright &copy; A Webpods Production</a></p>
+            </div>
+					
+			<div class="eight columns omega last-credit">
+				<p><a href="http://www.9thwave.co.uk" title="bradford web design">Designed by 9thwave</a></p>
+			</div>	
+	</footer><!-- footer -->
+
+	
+</div>
+				
+</div><!-- container -->
+
+
+	<!-- JS
+	================================================== -->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="javascripts/less.js"></script>
+
+<!-- Scroll To Top -->		
+	<script type="text/javascript">
+     $(document).ready(function(){
+	    // Scroll page to the top
+	   $('a.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop:0}, 'slow');
+		return false;
+	   });
+     });
+  </script>
+  
+  
+ <!--slight variant on Chris Coyier's http://css-tricks.com/convert-menu-to-dropdown/ -->
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+				// Create the dropdown bases
+				$("<select />").appendTo(".navigation nav");
+				
+				// Create default option "Go to..."
+				$("<option />", {
+				   "selected": "selected",
+				   "value"   : "",
+				   "text"    : "Go to..."
+				}).appendTo("nav select");
+				
+				
+				// Populate dropdowns with the first menu items
+				$(".navigation nav li a").each(function() {
+				 	var el = $(this);
+				 	$("<option />", {
+				     	"value"   : el.attr("href"),
+				    	"text"    : el.text()
+				 	}).appendTo("nav select");
+				});
+				
+				//make responsive dropdown menu actually work			
+		      	$("nav select").change(function() {
+		        	window.location = $(this).find("option:selected").val();
+		      	});
+
+		});
+	</script>
+
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

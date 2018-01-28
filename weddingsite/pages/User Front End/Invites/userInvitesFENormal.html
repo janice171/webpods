@@ -1,0 +1,29 @@
+<p>Please use this page to RSVP invites sent to you from Wedding Websites UK for [[+partner1]] and [[+partner2]]'s wedding.</p>
+<p>Please select the event you wish to RSVP and  enter your unique guest code to continue.</p>
+<form id="userInvitesFEForm" method="post" action="[[+formLink]]">
+    <fieldset>
+        <ol>
+            <li>  
+              <label for="userInvitesFEEventSelection">
+                   Event :
+            </label>
+               <div class="select-bg">
+                    <select name="userInvitesFEEventSelection" id="userInvitesFEEventSelection">
+                        [[+userInvitesFEEventSelection]]
+                     </select>
+                 </div>
+            </li>
+            <li><label for="userInvitesFEGUID">Guest Code:
+                </label>
+                <input type="text" id="userInvitesFEGUID"  name="userInvitesFEGUID" class="text">
+            </li>
+   </ol>
+
+    </fieldset>
+    <fieldset class="submit">
+        <input type="submit" name="userInvitesFEFormSubmit" id="userInvitesFEFormSubmit" value="Continue" class="submit-buy">
+    </fieldset>
+    
+</form>
+<br/>
+<div class="servererror">[[+invalid]]</div>

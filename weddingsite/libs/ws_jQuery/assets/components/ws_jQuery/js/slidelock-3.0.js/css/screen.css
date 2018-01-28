@@ -1,0 +1,88 @@
+/*
+	SCREEN STYLES
+	
+	Copyright 2010 Sean Mullin, parametercontraption.com
+	Released under an MIT License http://www.opensource.org/licenses/mit-license.php
+	
+	Compiled using pieces from HTML5 Boilerplate, Blueprint CSS and Less 2 Framework
+		
+*/
+
+@import "lib/reset.css";
+@import "lib/typography.css";
+@import "lib/forms.css";
+
+/* basic style declarations:
+
+#id, .class {
+
+	css 2.1 styles
+	css 3 styles
+
+}
+
+	Default 5-column, 768 px layout for iPads, netbooks, small(er)
+	screens and IE (All other layouts inherit styles from this layout)
+	XXXpx/XXem(16px)/XXem(18px)
+	------------------------------------------------------------------
+	1      		2      		3      		4      		5     
+	120px  		264px  		408px  		552px  		696px   (24px/1.5em gutters)
+	7.5em		16.5em		25.5em		34.5em		43.5em
+	
+	COLORS:
+	#695f3f;
+	#ecb500;
+	#271e01;
+	#a1c5df;
+	#ddd;
+*/
+
+/* body, general styles ---------------------------------------------------------- */
+body { padding: 0 2.25em; margin: 0 auto; width: 43.5em; background: #a1c5df; }
+
+
+/* header ------------------------------------------------------------------------ */
+header { width: 100%; float: left; }
+hgroup { width: 396px; margin: 40px 24px 36px 0; text-shadow: 0px 1px 1px #ddd; float: left; }
+hgroup h1 { font-size: 96px; font-family: "Raleway", Helvetica, Arial, sans-serif; color: #695f3f; }
+hgroup h2 { font-size: 18px; font-family: "Raleway", Helvetica, Arial, sans-serif; color: #271e01; letter-spacing: 0; margin-top: 14px; }
+#logo { width: 60px; margin: 30px 24px 0 24px; float: left; }
+
+/* navigation -------------------------------------------------------------------- */
+nav { width: 144px; font-size: 18px; float: left; margin: 48px 0 0 24px; }
+nav ul { list-style: none; width: 144px; margin: 0; }
+nav ul li { float: left; width: 72px; margin: 20px 0 0 0; text-align: center; }
+#download { line-height: 3; width: 142px; border: 1px solid #271e01; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #ecb500; box-shadow: 0px 0px 5px #271e01; -moz-box-shadow: 0px 0px 5px #271e01; -webkit-box-shadow: 0px 0px 5px #271e01; }
+
+
+/* content ----------------------------------------------------------------------- */
+#content { float: left; width: 43.5em; margin: 1.5em 0; }
+
+
+/* footer ------------------------------------------------------------------------ */
+footer { float: left; width: 100%; text-align: center; }
+
+
+.left { margin-left: 0; }
+.right { margin-right: 0; float: right; }
+
+/* print styles inline to avoid uneccessary http request */
+@media print { @import "print.css"; }
+
+/* Media queries for responsive design */
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+  
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */
+  
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {  
+  /* Prevent iOS, WinMobile from adjusting font size */
+  html { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; } 
+}

@@ -1,0 +1,21 @@
+<div id="userEditGuestbookMessageTextarea">
+    
+    <form id="userEditGuestbookMessageForm" method="post" action="/[[~[[*id]]]]?userPage=[[+userPageId]]">
+        <fieldset>
+        <ol>
+            <li><label for="userEditGuestbookMessageSender">From:
+                </label>
+                <input class="text" type="text"  id="userEditGuestbookMessageSender" name="userEditGuestbookMessageSender" readonly />
+            </li>
+            <li><label for="userEditGuestbookMessageEmail">Email:
+                </label>
+                <input class="text" type="text"  id="userEditGuestbookMessageEmail" name="userEditGuestbookMessageEmail" readonly />
+            </li>
+        </ol>
+</fieldset>
+        <textarea id="userEditGuestbookMessageContent" name="userEditGuestbookMessageContent" class="text" rows="10" style="width:100%" readonly>
+        [[+userEditGuestbookMessageContent]]
+        </textarea>
+ </form>
+    
+</div>

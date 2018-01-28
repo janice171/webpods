@@ -1,0 +1,20 @@
+a {color: #0c63ba;text-decoration: none;}
+a:hover {color: #000;}
+footer {height:54px;background: none repeat scroll 0 0 #305995; border-top: 1px solid #4B93D8;color:#9ccdff; }
+.footer_widgets_bg {background:url(../images/bg-blue.gif) repeat 0 0;}
+.footer_widgets {background:url(../images/bg-footer-top-slice.gif) repeat-x 0 0;min-height:300px;color:#9ccdff;}
+.footer_widgets a {color:#9ccdff;text-decoration:none;}
+.footer_widgets a:hover {color:#fff;text-decoration:underline;}
+.footer_widgets .col3 li { text-indent:0; margin:0; padding:0; border-bottom:1px solid #4b93d8; padding:3px 5px;color: #FFFFFF; }
+footer p {color:#9ccdff;}
+footer nav a {color:#9ccdff;}
+footer nav a:hover {color: #fff;}
+footer nav li {border:1px solid #4b93d8;}
+footer nav li:first-child {border:none;}
+footer nav li:first-child a {color:#fff;}
+.page_title {background:#2f70b3 url(../images/bg-blue.gif) repeat-x 0 0;}
+.page_title h2 {color: #fff; margin: 0;padding: 0; text-shadow: -1px -1px #000; font-weight: normal; font-size: 200%;}
+.page_title_inner {background:url(../images/bg-blue.gif) repeat 0 0; padding: 10px 0 20px 0;}
+
+legend {font-size: 150%; font-weight:bold; padding: 10px 0; color: #0c63ba;}
+legend.dec {padding: 10px 0 10px 62px;  background: url(../images/bullet-swirl.png) no-repeat 0px 7px;}

@@ -1,0 +1,54 @@
+<section class="content-main">
+    
+    <div class="wrapper-twocol">
+
+        <aside class="left210">
+
+            [[$userHomeWebPages]]
+            <h2 class="user-side-title">Support &amp; help</h2>
+            [[$userHomeSupport]]
+
+
+        </aside>
+
+        <article class="main-article">
+
+            <script>
+                $(function() {
+                    $( "#main-tabs" ).tabs();
+                });
+            </script>
+
+            <div id="main-tabs">
+                <ul id="primary">
+                    <li><a href="#tabs-1">Website Settings</a></li>
+                    <li><a href="#tabs-2">Personal Settings</a></li>
+                    <li><a href="#tabs-3">Social Settings</a></li>
+                </ul>
+
+                <div id="tabs-1">
+                    [[$userSettingsWebsiteForm]]
+                </div>
+
+                <div id="tabs-2">
+                    [[$userSettingsPersonalForm]]
+                </div>
+               
+                <div id="tabs-3">
+                    [[$userSettingsSocialForm]]
+                </div>
+                
+                [[+userSettingsFirstLogin]]
+           
+            </div><!-- / Main tabs -->
+
+    </div>
+
+</article>
+
+
+<div class="clearer"></div>
+
+</div><!--.wrapper-->
+
+</section>

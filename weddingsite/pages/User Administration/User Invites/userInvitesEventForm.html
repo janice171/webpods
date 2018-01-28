@@ -1,0 +1,79 @@
+<ol class="list-items">
+  <li>Check the details for your event below and make any changes on your <a href="/user-administration/events.html">events</a> page.</li>
+    <li>Check all your guests are on the invite list.</li>
+    <li>Choose an invite design and send your invites.</li>
+</ol>
+<form id="userInvitesEventForm" method="post" action="/[[~[[*id]]]]">
+    <fieldset>
+ <input type="hidden" id="userInvitesEventsTheme"  name="userInvitesEventsTheme">
+        <ol>
+          <li><label for="userInvitesEventsPartner1">Your Name/s:<br /><span class="small">you can change the names on your <a href="/user-administration/user-settings.html">settings</a> page.</span>
+                </label>
+                <input type="text" id="userInvitesEventsPartner1" value="[[+userInvitesEventsPartner1]]" name="userInvitesEventsPartner1" class="text" readonly>
+            </li>
+            
+         <li>  
+              <label for="userInvitesEventsEventSelection">
+                    Choose Event:
+            </label>
+               <div class="select-bg">
+                    <select name="userInvitesEventsEventSelection" id="userInvitesEventsEventSelection" class="valid">
+                        [[+userInvitesEventsEventSelection]]
+                     </select>
+                 </div>
+            </li>
+         
+                     <li><label for="userInvitesEventsDatepicker">Date:
+                </label>
+                <input type="text" value="[[+userInvitesEventsDatepicker]]" name="userInvitesEventsDatepicker" class="text" id="userInvitesEventsDatepicker" readonly>
+            </li>
+
+        
+          <li><label for="userInvitesEventsAddress1">Address line 1:
+                </label>
+                <input type="text" value="[[+userInvitesEventsAddress1]]" name="userInvitesEventsAddress1" class="text" id="userInvitesEventsAddress1" readonly>
+            </li>
+
+             <li><label for="userInvitesEventsAddress2">Address line 2:
+                </label>
+                <input type="text" value="[[+userInvitesEventsAddress2]]" name="userInvitesEventsAddress2" class="text" id="userInvitesEventsAddress2" readonly>
+            </li>
+            <li><label for="userInvitesEventsAddress3">Address line 3:
+                </label>
+                <input type="text" value="[[+userInvitesEventsAddress3]]" name="userInvitesEventsAddress3" class="text" id="userInvitesEventsAddress3" readonly>
+            </li>
+            <li><label for="userInvitesEventsAddress4">Address line 4:
+                </label>
+                <input type="text" value="[[+userInvitesEventsAddress4]]" name="userInvitesEventsAddress4" class="text" id="userInvitesEventsAddress4" readonly>
+            </li>
+            
+            <li><label for="userInvitesEventsStartTime">Start Time:
+                </label>
+                <input type="text" value="[[+userInvitesEventsStartTime]]" name="userInvitesEventsStartTime" class="text required" id="userInvitesEventsStartTime" readonly>
+            </li>
+            <li><label for="userInvitesEventsEndTime">End Time:
+                </label>
+                <input type="text" value="[[+userInvitesEventsEndTime]]" name="userInvitesEventsEndTime" class="text required" id="userInvitesEventsEndTime" readonly>
+            </li>
+            
+            <li><label for="userInvitesEventsPhone">Phone:
+                </label>
+                <input type="text" value="[[+userInvitesEventsPhone]]" name="userInvitesEventsPhone" class="text required" id="userInvitesEventsPhone" readonly>
+            </li>
+            <li><label for="userInvitesEventsEmail">Email:
+                </label>
+                <input type="text" value="[[+userInvitesEventsEmail]]" name="userInvitesEventsEmail" class="text required" id="userInvitesEventsEmail" readonly>
+            </li>
+            <li><label for="userInvitesEventsNotes">Notes:
+                    </label>
+                <textarea id="userInvitesEventsNotes" class="text" style="overflow:hidden;" name="userInvitesEventsNotes" rows="10" readonly >
+                   [[+userInvitesNotes]]
+                </textarea>
+            </li>
+
+                  </ol>
+
+    </fieldset>
+    
+</form>
+<div id="nousererror">[[+userInviteError]]</div>
